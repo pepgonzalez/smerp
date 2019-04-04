@@ -1211,9 +1211,10 @@
 														</li>
 													</ul>
 													<div class="tab-content">
+														
 														<div class="tab-pane active" id="contenido-tab" role="tabpanel">
-
-															<table class="kt-datatable" id="html_table" width="100%">
+															
+															<table class="kt-datatable" id="tabla1" width="100%" style="min-height:50px!Important;">
 																<thead>
 																	<tr>
 																		<th title="idarticulo">ID Articulo</th>
@@ -1228,9 +1229,7 @@
 																</thead>
 																<tbody>
 																	<tr>
-																		
 																		<td>
-																		
 																			<select class="form-control kt-selectpicker">
 																				<option>Seleccione...</option>
 																				<option>0001</option>
@@ -1266,29 +1265,309 @@
 																			<input type="text" class="form-control" value="$ 0.00" disabled="true">
 																		</td>
 																		<td align="right">
-																				<a href="#" target="_blank"><i class="flaticon2-add"></i></a>
-																			
-																			
+																				<a href="#" target="_blank">
+																					<i style="font-size:20px;" class="flaticon2-add"></i>
+																				</a>
+																				<a href="#" target="_blank">
+																					<i style="font-size:20px;" class="flaticon2-close-cross"></i>
+																				</a>
 																		</td>
 																	</tr>
 																</tbody>
 															</table>
-															
+
+															<div class="row" style="margin-top: 30px;">
+																<div class="col-lg-6">
+																	
+																</div>
+																<div class="col-lg-6">
+																	<div class="row">
+																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Subtotal:</strong></div>
+																		<div class="col-lg-6">$ 0.00 MXN</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Descuento:</strong></div>
+																		<div class="col-lg-6">$ 0.00 MXN</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Iva:</strong></div>
+																		<div class="col-lg-6">$ 0.00 MXN</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Total:</strong></div>
+																		<div class="col-lg-6">$ 0.00 MXN</div>
+																	</div>
+																</div>
+															</div>
+
 														</div>
+
+														<!-- tab 2 -->
 														<div class="tab-pane" id="registro-tab" role="tabpanel">
-															tab de registro
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Datos Generales</h5>	
+															</div>
+															
+															<div class="form-group row">
+																<div class="col-lg-3">
+																	<label>Usuario:</label>
+																	<p class="form-control-static" style="margin-top:8px;">José Guadalupe González</p>
+																</div>
+																<div class="col-lg-3">
+																	<label>Código de la Moneda:</label>
+																	<input type="text" class="form-control" id="moneda" value="MXN">
+																</div>
+																<div class="col-lg-3">
+																	<label>Envío:</label>
+																	<input type="text" class="form-control" id="envio" value="Reforma 250">
+																</div>
+																<div class="col-lg-3">
+																	<label>Clase Cambio:</label>
+																	<input type="text" class="form-control" id="envio" value="DOF">
+																</div>
+
+																<div class="col-lg-3">
+																	<label>Departamento:</label>
+																	<input type="text" class="form-control" id="departamento" value="SSC001">
+																</div>
+																<div class="col-lg-3">
+																	<label>Fecha de Cotización:</label>
+																	<input type="text" class="form-control" id="departamento" value="03/04/2019">
+																</div>
+																<div class="col-lg-2">
+																	<label>Un operación:</label>
+																	<input type="text" class="form-control" id="departamento" value="AB01">
+																</div>
+																<div class="col-lg-2">
+																	<label>Cotización:</label>
+																	<input type="text" class="form-control" id="departamento" value="$ 1,000.00">
+																</div>
+																<div class="col-lg-2">
+																	<label>IVA:</label>
+																	<input type="text" class="form-control" id="departamento" value="16%">
+																</div>	
+															</div>
+
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Registro Contable</h5>
+															</div>
+															
+																<table class="kt-datatable" id="tabla2" width="100%" style="min-height:50px!Important;">
+																	<thead>
+																		<tr>
+																			<th title="idarticulo">ID Articulo</th>
+																			<th title="descarticulo">Descripción Articulo</th>
+																			<th title="um">UM</th>
+																			<th title="Field #4">Cantidad</th>
+																			<th title="Field #5">Precio</th>
+																			<th title="Field #6">Descuento</th>
+																			<th title="Field #7">Total</th>
+																			<th title="Field #8">Acciones</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>
+																				<input type="text" class="form-control" value="0001" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="Articulo 1" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="Galon" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="1" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="$ 10.00" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="0.00%" disabled="true">
+																			</td>
+																			<td align="right">
+																				<input type="text" class="form-control" value="$ 10.00" disabled="true">
+																			</td>
+																			<td align="right">
+																				<a href="#" target="_blank">
+																					<i style="font-size:20px;" class="flaticon2-add"></i>
+																				</a>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+
+																<table class="kt-datatable" id="tabla3" width="100%" style="min-height:50px!Important;">
+																	<thead>
+																		<tr>
+																			<th title="idarticulo">Cuenta</th>
+																			<th title="descarticulo">Departamento</th>
+																			<th title="um">Un Op</th>
+																			<th title="Field #4">Producto</th>
+																			<th title="Field #5">Proyecto</th>
+																			<th title="Field #6">Importe</th>
+																			<th title="Field #7">IVA</th>												
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>
+																				<input type="text" class="form-control" value="812345678" disabled="true">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="SSC001">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="AB01" >
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="">
+																			</td>
+																			<td>
+																				<input type="text" class="form-control" value="$ 625,000.00">
+																			</td>
+																			<td align="right">
+																				<input type="text" class="form-control" value="16.00 %">
+																			</td>
+																			
+																		</tr>
+																	</tbody>
+																</table>
 														</div>
+														<!-- tab de comentarios -->
 														<div class="tab-pane" id="comentarios-tab" role="tabpanel">
-															tab de comentarios
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Aprobadores</h5>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
+															<div class="row">
+																<h5 style="display: block;width: 100%;margin-top: 20px;">Proveedor</h5>
+																<h6 style="margin-bottom: 15px;">Comentario de orden de compra</h6>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
+															<div class="row">
+																<h5 style="display: block;width: 100%;margin-top: 20px;">Articulos</h5>
+																<h6 style="margin-bottom: 15px;">Articulo 1</h6>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
+
+															<div class="row">
+																<h5 style="display: block;width: 100%;margin-top: 20px;">Almacen</h5>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
+															<div class="row">
+																<h5 style="display: block;width: 100%;margin-top: 20px;">Cuentas por pagar</h5>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
 														</div>
+
 														<div class="tab-pane" id="procesos-tab" role="tabpanel">
-															tab de procesos
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Workflow de Aprobación</h5>	
+															</div>
+															<div class="row">
+																<button type="submit" id="createOrderButton" class="btn btn-success">Guardar Orden de Compra y Envíar para aprobación</button>
+															</div>
+															<div class="row" style="margin-top: 30px;">
+																<h5 style="margin-bottom: 15px;">Envíar Orden de compra a proveedor</h5>	
+															</div>
+															<div class="row">
+																<div class="col-lg-1">
+																	<p>Correo electrónico: </p>	
+																</div>
+																<div class="col-lg-5">
+																	<input type="text" class="form-control kt-quick-search__input" placeholder="Ingrese correo electrónico...">
+																</div>
+																<div class="col-lg-3">
+																	<button type="submit" id="createOrderButton" class="btn btn-success">Enviar Orden de Compra</button>	
+																</div>
+															</div>
+
+															<div class="row" style="margin-top: 30px;">
+																<h5 style="margin-bottom: 15px;">Recepción de Orden de Compra</h5>	
+															</div>
+															<div class="row" style="padding: 5px;">
+																<div class="col-lg-2">
+																	<p>Factura: </p>	
+																</div>
+																<div class="col-lg-4">
+																	<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																</div>
+															</div>
+															<div class="row" style="padding: 5px;">
+																<div class="col-lg-2">
+																	<p>Fecha Recepción: </p>	
+																</div>
+																<div class="col-lg-4">
+																	<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																</div>
+															</div>
+															<div class="row" style="padding: 5px;">
+																<button type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>
+															</div>
+
 														</div>
 														<div class="tab-pane" id="workflow-tab" role="tabpanel">
-															tab de workflow
+															<table class="kt-datatable" id="tabla4" width="100%" style="min-height:50px!Important;">
+																	<thead>
+																		<tr>
+																			<th title="idarticulo">Nivel</th>
+																			<th title="descarticulo">Aprobador</th>
+																			<th title="um">Puesto</th>
+																			<th title="Field #4">Fecha Envío</th>
+																			<th title="Field #5">Estatus</th>
+																			<th title="Field #6">Fecha de aprobación</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><p>1</p></td>
+																			<td><p>Sandra Duran Linares</p></td>
+																			<td><p>Jefe de compras corp</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p style="color: green!Important;"><strong>Aprobada</strong></p></td>
+																			<td><p>04/04/2019</p></td>
+																		</tr>
+																		<tr>
+																			<td><p>2</p></td>
+																			<td><p>Almicar Hernandez</p></td>
+																			<td><p>Gerente General</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p style="color: yellow!Important;"><strong>Pendiente</strong></p></td>
+																			<td><p></p></td>
+																		</tr>
+																		<tr>
+																			<td><p>3</p></td>
+																			<td><p>Yair Hernandez</p></td>
+																			<td><p>Director de Compras</p></td>
+																			<td><p></p></td>
+																			<td><p style="color: red!Important;"><strong>No enviado</strong></p></td>
+																			<td><p></p></td>
+																		</tr>
+																	</tbody>
+																</table>
 														</div>
 														<div class="tab-pane" id="doctos-tab" role="tabpanel">
-															tab de documentos
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Recepción</h5>	
+															</div>
+															<div class="row">
+																<div class="col-lg-12"><h6>ID Recepción:</h6></div>
+																<div class="col-lg-12"><h6>Fecha Recepción:</h6></div>
+																<div class="col-lg-12"><h6>Estado Recepción:</h6></div>
+															</div>
+
+															<div class="row" style="margin-top: 20px;">
+																<h5 style="margin-bottom: 15px;">Comprobante</h5>	
+															</div>
+															<div class="row">
+																<div class="col-lg-12"><h6>ID Comprobante:</h6></div>
+																<div class="col-lg-12"><h6>Factura:</h6></div>
+																<div class="col-lg-12"><h6>Estado de comprobante:</h6></div>
+															</div>
 														</div>
 													</div>
 
