@@ -218,6 +218,49 @@ var KTDatatableHtmlTableDemo = function() {
 			},
 		});
 
+		var datatable5 = $('#tabla5').KTDatatable({
+			pagination: false,
+			data: {
+				saveState: {cookie: false},
+			},
+			search: {
+				input: $('#generalSearch'),
+			},
+			// layout definition
+			layout: {
+				scroll: true, // enable/disable datatable scroll both horizontal and
+				// vertical when needed.
+				height: null, // datatable's body's fixed height
+				footer: false, // display/hide footer
+			},
+			columns: [
+			    {
+			      field: 'tipo',
+			      name: 'tipo',
+			      title: 'tipo',
+			    },
+			     {
+			      field: 'clase',
+			      name: 'clase',
+			      title: 'clase',
+			    },
+			     {
+			      field: 'descripcion',
+			      name: 'descripcion',
+			      title: 'descripcion',
+			    },
+			     {
+			      field: 'regla',
+			      name: 'regla',
+			      title: 'regla',
+			    }, {
+			      field: 'porcentaje',
+			      name: 'porcentaje',
+			      title: 'porcentaje',
+			    }
+			],
+		});
+
     $('#kt_form_status').on('change', function() {
       datatable.search($(this).val().toLowerCase(), 'Status');
     });

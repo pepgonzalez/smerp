@@ -1083,8 +1083,7 @@
 						<!-- begin:: Subheader -->
 						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 							<div class="kt-subheader__main">
-								<h3 class="kt-subheader__title">
-									Compras > Nueva Orden de Compra </h3>
+								<h3 class="kt-subheader__title">Cuentas por Pagar > Creación de Comprobante</h3>
 							</div>
 							
 							<div class="kt-subheader__toolbar">
@@ -1104,22 +1103,7 @@
 
 											<!--<i class="flaticon2-plus"></i>-->
 										</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<ul class="kt-nav">
-												
-												<li class="kt-nav__section kt-nav__section--first">
-													<span class="kt-nav__section-text">Acciones</span>
-												</li>
-												
-												<li class="kt-nav__item">
-													<a href="#" class="kt-nav__link">
-														<i class="kt-nav__link-icon flaticon2-graph-1"></i>
-														<span class="kt-nav__link-text">Nueva Orden de Compra</span>
-													</a>
-												</li>
-												
-											</ul>
-										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -1146,7 +1130,7 @@
 											
 											<div class="kt-portlet__head-label">
 												<h3 class="kt-portlet__head-title">
-													Nueva Orden de Compra
+													Creación de comprobante
 												</h3>
 											</div>
 											
@@ -1192,20 +1176,39 @@
 														</div>
 													</div>
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Tipo de Proveedor</label>
+														<label class="col-form-label col-lg-3 col-sm-12">Proveedor</label>
 														<div class="col-lg-4 col-md-9 col-sm-12">
 															<select class="form-control kt-selectpicker">
 																<option>Seleccione...</option>
-																<option>Tipo de Proveedor 1</option>
+																<option>Proveedor 1</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group row">
+														<label class="col-form-label col-lg-3 col-sm-12">Tipo de comprobante</label>
+														<div class="col-lg-4 col-md-9 col-sm-12">
+															<select class="form-control kt-selectpicker">
+																<option>Seleccione...</option>
+																<option>Tipo de Comprobante 1</option>
+																<option>Tipo de Comprobante 2</option>
 															</select>
 														</div>
 													</div>
 
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Nombre del Proveedor</label>
+														<label class="col-form-label col-lg-3 col-sm-12">ID Comprobante</label>
 														<div class="col-lg-4 col-md-9 col-sm-12">
-															<input type="text" name="providerName" class="form-control" placeholder="Capture el nombre del proveedor...">
+															<input type="text" name="providerName" class="form-control" placeholder="" value="Nuevo" disabled="true">
 														</div>
+													</div>
+
+													<div class="form-group row">
+
+														<label class="col-form-label col-lg-3 col-sm-12">Fecha contable</label>
+														<div class="col-lg-4 col-md-9 col-sm-12">
+															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
+														</div>
+
 													</div>
 
 												</div>
@@ -1217,8 +1220,8 @@
 										<div class="kt-portlet__foot">
 											<div class="row align-items-center">
 												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createOrderButton"
-													class="btn btn-success">Crear Orden de Compra</button>
+													<button type="submit" id="createVoucherButton"
+													class="btn btn-success">Crear Comprobante</button>
 												</div>
 											</div>
 										</div>
@@ -1951,6 +1954,7 @@
 
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
+		<script src="assets/app/custom/general/crud/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
 
 		<!--end::Page Scripts -->
 
@@ -1961,8 +1965,8 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$("#createOrderButton").click(function(e){
-					window.location.href = "compras2.html";
+				$("#createVoucherButton").click(function(e){
+					window.location.href = "comprobante2.html";
 				});
 			});
 		</script>
