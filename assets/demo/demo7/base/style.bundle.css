@@ -10488,7 +10488,14 @@ input.btn.btn-label-danger {
   color: #22b9ff; }
   .nav-tabs .nav-item .nav-link i {
     color: #22b9ff; }
-  .nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link:hover {
+  .nav-tabs .nav-item .nav-link:hover,.nav-tabs .nav-item .nav-link.active:hover{
+    background-color: #ebedf2;
+  }
+  .nav-tabs .nav-item .nav-link.active{
+    background-color: #22b9ff;
+    color: white;
+  }
+  .nav-tabs .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link:hover {
     color: #22b9ff; }
     .nav-tabs .nav-item .nav-link.active i, .nav-tabs .nav-item .nav-link:active i, .nav-tabs .nav-item .nav-link:hover i {
       color: #22b9ff; }

@@ -1321,7 +1321,7 @@
 														<!-- tab 2 -->
 														<div class="tab-pane" id="registro-tab" role="tabpanel">
 															<div class="row">
-																<h5 style="margin-bottom: 15px;">Datos Generales</h5>	
+																<h5 style="margin-bottom: 15px;">Información General</h5>	
 															</div>
 															
 															<div class="form-group row">
@@ -1378,7 +1378,6 @@
 																			<th title="Field #5">Precio</th>
 																			<th title="Field #6">Descuento</th>
 																			<th title="Field #7">Total</th>
-																			<th title="Field #8">Acciones</th>
 																		</tr>
 																	</thead>
 																	<tbody>
@@ -1404,11 +1403,6 @@
 																			<td align="right">
 																				<input type="text" class="form-control" value="$ 10.00" disabled="true">
 																			</td>
-																			<td align="right">
-																				<a href="#" target="_blank">
-																					<i style="font-size:20px;" class="flaticon2-add"></i>
-																				</a>
-																			</td>
 																		</tr>
 																	</tbody>
 																</table>
@@ -1422,7 +1416,8 @@
 																			<th title="Field #4">Producto</th>
 																			<th title="Field #5">Proyecto</th>
 																			<th title="Field #6">Importe</th>
-																			<th title="Field #7">IVA</th>												
+																			<th title="Field #7">IVA</th>	
+																			<th title="Field #8">Acciones</th>							
 																		</tr>
 																	</thead>
 																	<tbody>
@@ -1447,6 +1442,11 @@
 																			</td>
 																			<td align="right">
 																				<input type="text" class="form-control" value="16.00 %">
+																			</td>
+																			<td align="right">
+																				<a href="#" target="_blank">
+																					<i style="font-size:20px;" class="flaticon2-add"></i>
+																				</a>
 																			</td>
 																			
 																		</tr>
@@ -1481,49 +1481,62 @@
 														</div>
 
 														<div class="tab-pane" id="procesos-tab" role="tabpanel">
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Workflow de Aprobación</h5>	
-															</div>
-															<div class="row">
-																<button type="submit" id="createOrderButton" class="btn btn-success">Guardar Orden de Compra y Envíar para aprobación</button>
-															</div>
-															<div class="row" style="margin-top: 30px;">
-																<h5 style="margin-bottom: 15px;">Envíar Orden de compra a proveedor</h5>	
-															</div>
-															<div class="row">
-																<div class="col-lg-1">
-																	<p>Correo electrónico: </p>	
+															
+															<div style="border:solid #ebedf2 1px; padding: 20px;">	
+																<div class="row">
+																	<h5 style="margin-bottom: 15px;">Workflow de Aprobación</h5>	
 																</div>
-																<div class="col-lg-5">
-																	<input type="text" class="form-control kt-quick-search__input" placeholder="Ingrese correo electrónico...">
-																</div>
-																<div class="col-lg-3">
-																	<button type="submit" id="createOrderButton" class="btn btn-success">Enviar Orden de Compra</button>	
+																<div class="row">
+																	<div class="col-lg-6" style="padding-top: 10px;">Guardar Orden de compra y Enviar para aprobación</div>
+																	<div class="col-lg-6" style="text-align: right;">
+																		<button type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>
+																	</div>
+																	
 																</div>
 															</div>
 
-															<div class="row" style="margin-top: 30px;">
-																<h5 style="margin-bottom: 15px;">Recepción de Orden de Compra</h5>	
-															</div>
-															<div class="row" style="padding: 5px;">
-																<div class="col-lg-2">
-																	<p>Factura: </p>	
+															<div style="border:solid #ebedf2 1px; padding: 20px; margin-top: 20px;">	
+																<div class="row">
+																	<h5 style="margin-bottom: 15px;">Envíar Orden de compra a proveedor</h5>
 																</div>
-																<div class="col-lg-4">
-																	<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																<div class="row">
+																	<div class="col-lg-2" style="padding-top: 10px;">
+																		<p>Correo electrónico: </p>	
+																	</div>
+																	<div class="col-lg-8">
+																		<input type="text" class="form-control kt-quick-search__input" placeholder="Ingrese correo electrónico...">
+																	</div>
+																	<div class="col-lg-2" style="text-align: right;">
+																		<button type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>	
+																	</div>
 																</div>
-															</div>
-															<div class="row" style="padding: 5px;">
-																<div class="col-lg-2">
-																	<p>Fecha Recepción: </p>	
+														    </div>
+
+															<div style="border:solid #ebedf2 1px; padding: 20px; margin-top: 20px;">	
+																<div class="row" style="">
+																	<h5 style="margin-bottom: 15px;">Recepción de Orden de Compra</h5>	
 																</div>
-																<div class="col-lg-4">
-																	<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																<div class="row" style="padding: 5px;">
+																	<div class="col-lg-2">
+																		<p>Factura: </p>	
+																	</div>
+																	<div class="col-lg-4">
+																		<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																	</div>
 																</div>
-															</div>
-															<div class="row" style="padding: 5px;">
-																<button type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>
-															</div>
+																<div class="row" style="padding: 5px;">
+																	<div class="col-lg-2">
+																		<p>Fecha Recepción: </p>	
+																	</div>
+																	<div class="col-lg-4">
+																		<input type="text" class="form-control kt-quick-search__input" placeholder="">
+																	</div>
+																	<div class="col-lg-6" style="text-align:right;">
+																		<button type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>	
+																	</div>
+																</div>
+																
+														    </div>
 
 														</div>
 														<div class="tab-pane" id="workflow-tab" role="tabpanel">
@@ -1544,25 +1557,42 @@
 																			<td><p>Sandra Duran Linares</p></td>
 																			<td><p>Jefe de compras corp</p></td>
 																			<td><p>04/04/2019</p></td>
-																			<td><p style="color: green!Important;"><strong>Aprobada</strong></p></td>
+																			<td><p>Aprobado</p></td>
 																			<td><p>04/04/2019</p></td>
 																		</tr>
 																		<tr>
-																			<td><p>2</p></td>
-																			<td><p>Almicar Hernandez</p></td>
-																			<td><p>Gerente General</p></td>
+																			<td><p>1</p></td>
+																			<td><p>José Gonzalez Hernandez</p></td>
+																			<td><p>Jefe de compras corp</p></td>
 																			<td><p>04/04/2019</p></td>
-																			<td><p style="color: yellow!Important;"><strong>Pendiente</strong></p></td>
-																			<td><p></p></td>
+																			<td><p>Rechazado</p></td>
+																			<td><p>04/04/2019</p></td>
 																		</tr>
 																		<tr>
 																			<td><p>3</p></td>
 																			<td><p>Yair Hernandez</p></td>
 																			<td><p>Director de Compras</p></td>
 																			<td><p></p></td>
-																			<td><p style="color: red!Important;"><strong>No enviado</strong></p></td>
+																			<td><p>No enviado</p></td>
 																			<td><p></p></td>
 																		</tr>
+																		<tr>
+																			<td><p>2</p></td>
+																			<td><p>Almicar Hernandez</p></td>
+																			<td><p>Gerente General</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Pendiente</p></td>
+																			<td><p></p></td>
+																		</tr>
+																		<tr>
+																			<td><p>2</p></td>
+																			<td><p>Monica Campos de Lira</p></td>
+																			<td><p>Gerente General</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Devuelto</p></td>
+																			<td><p></p></td>
+																		</tr>
+																		
 																	</tbody>
 																</table>
 														</div>
