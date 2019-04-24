@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | Captura Comprobante</title>
+		<title>SMART ERP | Comprobantes</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -241,7 +241,6 @@
 											</ul>
 										</div>
 									</li>
-
 									<!--
 									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i></a>
 										
@@ -752,6 +751,97 @@
 							-->
 
 							<!--end: Notifications -->
+							<div class="kt-header__topbar-item dropdown">
+
+								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+									
+									<span class="kt-header__topbar-icon kt-header__topbar-icon--success">
+										<i class="flaticon2-bell-alarm-symbol"></i>
+										
+										
+										
+									</span>
+									
+									<span class="kt-hidden kt-badge kt-badge--danger"></span>
+
+									
+									
+									
+
+								</div>
+								
+								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+									<form>
+
+										<!--begin: Head -->
+										<div class="kt-head kt-head--skin-light kt-head--fit-x kt-head--fit-b">
+											<h3 class="kt-head__title">
+												Notificaciones
+												&nbsp;
+												
+												<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">1 nueva(s)</span>
+												
+											</h3>
+											<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand  kt-notification-item-padding-x" role="tablist">
+
+												<li class="nav-item">
+													<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Nuevas</a>
+												</li>
+												
+												<li class="nav-item">
+													<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Todas</a>
+												</li>
+
+											</ul>
+										</div>
+
+										<!--end: Head -->
+										<div class="tab-content">
+											
+											<div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true">
+													
+													<a href="compras2.html" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-doc kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																La orden de Compra 00000001 ha sido aprobada
+															</div>
+															<div class="kt-notification__item-time">
+																hace 23 hrs
+															</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+											
+											<div class="tab-pane active" id="topbar_notifications_logs" role="tabpanel">
+												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true">
+													
+													<a href="compras2.html" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-doc kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																La orden de Compra 00000002 ha sido aprobada
+															</div>
+															<div class="kt-notification__item-time">
+																hace unos segundos
+															</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+
+										</div>
+									</form>
+								</div>
+							</div>
 
 							<!--begin: Quick actions -->
 							<div class="kt-header__topbar-item dropdown">
@@ -1104,16 +1194,31 @@
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
 						<!-- begin:: Subheader -->
-						<div class="kt-subheader kt-grid__item" id="kt_subheader">
+						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
 							<div class="kt-subheader__main">
 								<h3 class="kt-subheader__title">
-									Cuentas por Pagar > Creación de Comprobante </h3>
+									Cuentas por Pagar > Comprobantes
+								</h3>
 							</div>
+
+
 							
 							<div class="kt-subheader__toolbar">
 								<div class="kt-subheader__wrapper">
 									
-									
+									<a href="#" class="btn kt-subheader__btn-daterange" id="kt_dashboard_daterangepicker" data-toggle="kt-tooltip" title="Seleccione Periodo" data-placement="left">
+										<span class="kt-subheader__btn-daterange-title" id="kt_dashboard_daterangepicker_title">Hoy</span>&nbsp;
+										<span class="kt-subheader__btn-daterange-date" id="kt_dashboard_daterangepicker_date">27 de Abril del 2019</span>
+
+										<!--<i class="flaticon2-calendar-1"></i>-->
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--sm">
+											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+												<rect id="bound" x="0" y="0" width="24" height="24" />
+												<path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" id="check" fill="#000000" fill-rule="nonzero" opacity="0.3" />
+												<path d="M2,11.8650466 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.23590829,11 3.04485894,11.3127315 2,11.8650466 Z M6,7 C5.44771525,7 5,7.44771525 5,8 C5,8.55228475 5.44771525,9 6,9 L15,9 C15.5522847,9 16,8.55228475 16,8 C16,7.44771525 15.5522847,7 15,7 L6,7 Z" id="Combined-Shape" fill="#000000" />
+											</g>
+										</svg> 
+									</a>
 
 									<div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Acciones Rápidas" data-placement="left">
 										<a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1137,7 +1242,7 @@
 												<li class="kt-nav__item">
 													<a href="#" class="kt-nav__link">
 														<i class="kt-nav__link-icon flaticon2-graph-1"></i>
-														<span class="kt-nav__link-text">Nuevo comprobante</span>
+														<span class="kt-nav__link-text">Nueva Orden de Compra</span>
 													</a>
 												</li>
 												
@@ -1155,596 +1260,178 @@
 						<!-- begin:: Content -->
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
 
-							<!--Begin::Dashboard 7-->
-
-							<!--Begin::Section-->
-							<div class="row">
-								
-								<div class="col-xl-12">
-									
-									<div class="kt-portlet kt-portlet--mobile">
-
-										<!-- contenido -->
-										<div class="kt-portlet__body kt-portlet__body--fit">
-
-											<form class="kt-form kt-form--label-right">
-												<div class="kt-portlet__body" style="padding:10px;">
-													<div class="form-group row" style="margin-bottom: 0px;">
-														<div class="col-lg-2">
-															<label>Empresa:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="Empresa 1" disabled="true">
-														</div>
-														<div class="col-lg-2">
-															<label>ID Proveedor:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="0001" disabled="true">
-														</div>
-														<div class="col-lg-2">
-															<label>Tipo de Comprobante:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="Factura" disabled="true">
-														</div>
-														<div class="col-lg-2">
-															<label>ID Comprobante:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="0001" disabled="true">
-														</div>
-														<div class="col-lg-2">
-															<label>Fecha Contable:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="10/04/2019" disabled="true">
-														</div>
-														<div class="col-lg-2">
-															<label>Estado:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="Inicial" disabled="true">
-														</div>														
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-
-									<div class="kt-portlet kt-portlet--mobile">
+							<div class="kt-portlet kt-portlet--mobile">
+								<div class="kt-portlet__head kt-portlet__head--lg">
+									<div class="kt-portlet__head-label">
 										
-										<!-- header -->
-										<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--break-sm">
+										<span class="kt-portlet__head-icon">
+											<i class="kt-font-brand flaticon2-line-chart"></i>
+										</span>
+										
+										<h3 class="kt-portlet__head-title">
+											Listado de Comprobantes
+										</h3>
+
+									</div>
+									<div class="kt-portlet__head-toolbar">
+										<div class="kt-portlet__head-wrapper">
 											
-											<div class="kt-portlet__head-label">
-												<h3 class="kt-portlet__head-title">
-													Datos Generales
-												</h3>
+											<div class="dropdown dropdown-inline">
+												
+												<button type="button" class="btn btn-brand btn-icon-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href = 'comprobante1.html';">
+													<i class="flaticon2-plus"></i> Crear comprobante
+												</button>
+																								
 											</div>
 										</div>
+									</div>
+								</div>
+								<div class="kt-portlet__body">
 
-										<!-- contenido -->
-										<div class="kt-portlet__body kt-portlet__body--fit">
-
-											<form class="kt-form kt-form--label-right">
+									<!--begin: Search Form -->
+									<div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+										<div class="row align-items-center">
+											
+											<div class="col-xl-8 order-2 order-xl-1">
 												
-												<div class="kt-portlet__body">
-													<div class="form-group row">
-														<div class="col-lg-4">
-															<label>Proveedor:</label>
-															<p class="form-control-static" style="margin-top:8px;">Smart Solutions Consulting</p>
-														</div>
-
-														<div class="col-lg-2">
-															<label>Factura:</label>
-															<input type="email" class="form-control" placeholder="" value="FAC-0101">
-														</div>
-														
-														<div class="col-lg-2">
-															<label>Fecha Factura:</label>
-															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha..." value="04/10/2019">
-														</div>
-														
-														<div class="col-lg-2">
-															<label>Condición de Pago:</label>
-															<input type="email" class="form-control" placeholder="" value="">
-														</div>
-														<div class="col-lg-2">
-															<label>Total:</label>
-															<input type="email" class="form-control" placeholder="" value="$10,000.00">
-														</div>			
-													</div>	
-
-													<ul class="nav nav-tabs" role="tablist">
-														<li class="nav-item">
-															<a class="nav-link active" data-toggle="tab" href="#" data-target="#contenido-tab">Contenido</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" data-toggle="tab" href="#" data-target="#registro-tab">Registro</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" data-toggle="tab" href="#" data-target="#impuestos-tab">Impuestos</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" data-toggle="tab" href="#" data-target="#pagos-tab">Pagos</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" data-toggle="tab" href="#" data-target="#pagos2-tab">Procesos</a>
-														</li>
-														<li class="nav-item">
-															<a class="nav-link" data-toggle="tab" href="#" data-target="#doctos-tab">Documentos Relacionados</a>
-														</li>
-													</ul>
-													<div class="tab-content">
-														
-														<div class="tab-pane active" id="contenido-tab" role="tabpanel">
-															
-															<table class="kt-datatable" id="tabla1" width="100%" style="min-height:50px!Important;">
-																<thead>
-																	<tr>
-																		<th title="idarticulo">ID Articulo</th>
-																		<th title="descarticulo">Descripción Articulo</th>
-																		<th title="um">UM</th>
-																		<th title="Field #4">Cantidad</th>
-																		<th title="Field #5">Precio</th>
-																		<th title="Field #6">Descuento</th>
-																		<th title="Field #7">Total</th>
-																	</tr>
-																</thead>
-																<tbody>
-																	<tr>
-																		<td>
-																			<select class="form-control kt-selectpicker">
-																				<option>Seleccione...</option>
-																				<option>0001</option>
-																			</select>
-
-																		</td>
-																		
-																		<td>
-																			<input type="text" class="form-control" value="Articulo 1" disabled="true">
-																		</td>
-
-																		<td>
-																			
-																			<select class="form-control kt-selectpicker">
-																				<option>Seleccione...</option>
-																				<option>Pieza</option>
-																				<option>Galon</option>
-																				<option>Litro</option>
-																			</select>
-
-																		</td>
-
-																		<td>
-																			<input type="text" class="form-control" value="0">
-																		</td>
-																		<td>
-																			<input type="text" class="form-control" value="$ 0.00">
-																		</td>
-																		<td>
-																			<input type="text" class="form-control" value="0.00%">
-																		</td>
-																		<td align="right">
-																			<input type="text" class="form-control" value="$ 0.00" disabled="true">
-																		</td>
-																		
-																	</tr>
-																</tbody>
-															</table>
-
-															<div class="row" style="margin-top: 30px;">
-																<div class="col-lg-6">
-																	
-																</div>
-																<div class="col-lg-6">
-																	<div class="row">
-																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Subtotal:</strong></div>
-																		<div class="col-lg-6">$ 0.00 MXN</div>
-																	</div>
-																	<div class="row">
-																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Descuento:</strong></div>
-																		<div class="col-lg-6">$ 0.00 MXN</div>
-																	</div>
-																	<div class="row">
-																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Iva:</strong></div>
-																		<div class="col-lg-6">$ 0.00 MXN</div>
-																	</div>
-																	<div class="row">
-																		<div class="col-lg-6" style="font-size:1.2em;"><strong>Total:</strong></div>
-																		<div class="col-lg-6">$ 0.00 MXN</div>
-																	</div>
-																</div>
+												<div class="row align-items-center">
+													
+													<!-- Empresa -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label">
+																<label>Empresa:</label>
 															</div>
-
-														</div>
-
-														<!-- tab 2 -->
-														<div class="tab-pane" id="registro-tab" role="tabpanel">
-
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Registro Contable</h5>
-															</div>
-															
-																<table class="kt-datatable" id="tabla2" width="100%" style="min-height:50px!Important;">
-																	<thead>
-																		<tr>
-																			<th title="idarticulo">#</th>
-																			<th title="descarticulo">Descripción Articulo</th>
-																			<th title="um">UM</th>
-																			<th title="Field #4">Cantidad</th>
-																			<th title="Field #5">Precio</th>
-																			<th title="Field #6">Descuento</th>
-																			<th title="Field #7">Total</th>
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>
-																				<input type="text" class="form-control" value="0001" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="Articulo 1" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="Galon" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="1" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="$ 10.00" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="0.00%" disabled="true">
-																			</td>
-																			<td align="right">
-																				<input type="text" class="form-control" value="$ 10.00" disabled="true">
-																			</td>
-																			
-																		</tr>
-																	</tbody>
-																</table>
-
-																<table class="kt-datatable" id="tabla3" width="100%" style="min-height:50px!Important;">
-																	<thead>
-																		<tr>
-																			<th title="idarticulo">Cuenta</th>
-																			<th title="descarticulo">Departamento</th>
-																			<th title="um">Un Op</th>
-																			<th title="Field #4">Producto</th>
-																			<th title="Field #5">Proyecto</th>
-																			<th title="Field #6">Importe</th>
-																			<th title="Field #7">IVA</th>												
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>
-																				<input type="text" class="form-control" value="812345678" disabled="true">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="SSC001">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="AB01" >
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="">
-																			</td>
-																			<td>
-																				<input type="text" class="form-control" value="$ 625,000.00">
-																			</td>
-																			<td align="right">
-																				<input type="text" class="form-control" value="16.00 %">
-																			</td>
-																			
-																		</tr>
-																	</tbody>
-																</table>
-														</div>
-														<!-- tab de comentarios -->
-														<div class="tab-pane" id="impuestos-tab" role="tabpanel">
-															
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Iva</h5>
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Aplicabilidad</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="Imponible" id="example-text-input" disabled="true">
-																</div>
-															</div>
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Código IVA</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="16%" id="example-text-input" disabled="true">
-																</div>
-															</div>
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Porcentaje</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="16.00" id="example-text-input" disabled="true">
-																</div>
-															</div>
-															
-															<div class="row">
-																<h5 style="display: block;width: 100%;">Retenciones</h5>
-															</div>
-															<div class="row">
-																<div class="col-lg-12">
-																	
-																	<table class="kt-datatable" id="tabla5" width="100%">
-																		<thead>
-																			<tr>
-																				<th colspan="1" title="tipo">Tipo</th>
-																				<th colspan="1" title="clase">Clase</th>
-																				<th colspan="4" title="descripcion">Descripción</th>
-																				<th colspan="1"title="regla">Regla</th>
-																				<th colspan="1"title="porcentaje">Porcentaje Retenido</th>
-																			</tr>
-																		</thead>
-																		<tbody>
-																			<tr>
-																				<td>
-																					<input type="text" class="form-control" value="IVA" disabled="true" style="width: 100%;">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="01" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" name="descripcion" class="form-control" value="Servicios Profesionales" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="IVA_10" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="10.67" disabled="true">
-																				</td>
-																			</tr>
-																			<tr>
-																				<td>
-																					<input type="text" class="form-control" value="ISR" disabled="true" style="width: 100%;">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="01" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" name="descripcion" class="form-control" value="Servicios Profesionales" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="ISR_10" disabled="true">
-																				</td>
-																				<td>
-																					<input type="text" class="form-control" value="10.00" disabled="true">
-																				</td>
-																			</tr>
-																		</tbody>
-																	</table>
-																</div>
-																
-															</div>																		
-														</div>
-
-														<div class="tab-pane" id="pagos-tab" role="tabpanel">
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Información de Pagos</h5>	
-															</div>
-
-															<div class="form-group row">
-																
-																<div class="col-lg-4">
-																	<label>Pago:</label>
-																	<input type="email" class="form-control" placeholder="" value="">
-																</div>
-
-																<div class="col-lg-4">
-																	<label>Importe Bruto:</label>
-																	<input type="email" class="form-control" placeholder="" value="">
-																</div>
-																
-																<div class="col-lg-4">
-																	<label>Vencimiento:</label>
-																	<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha..." value="04/10/2019">
-																</div>
-																
-																<div class="col-lg-12">
-																	<label>Beneficiario:</label>
-																	<input type="email" class="form-control" placeholder="" value="">
-																</div>																
-															</div>
-
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Opciones de Pago</h5>	
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Banco:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Grupo Pago:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Cuenta:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Gestor de Pagos:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Método:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Referencia:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-															</div>
-
-															<div class="form-group row">												
-																<div class="col-lg-12">
-																	<label>Mensaje:</label>
-																	<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
-																</div>
-															</div>
-
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Banco Proveedor</h5>	
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">ID Cuenta:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Banco:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Descripción:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Sucursal:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-															</div>
-
-															<div class="form-group row">
-																<label for="example-text-input" class="col-2 col-form-label">Cuenta Bancaria:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
-																<label for="example-text-input" class="col-2 col-form-label">Dígito Verificador:</label>
-																<div class="col-3">
-																	<input class="form-control" type="text" value="" id="example-text-input">
-																</div>
+															<div class="kt-form__control">
+																<select class="form-control bootstrap-select" id="kt_form_status">
+																	<option value="">Seleccione...</option>
+																	<option value="1">Empresa 1</option>
+																	<option value="2">Empresa 2</option>
+																</select>
 															</div>
 														</div>
+													</div>
 
-														<div class="tab-pane" id="pagos2-tab" role="tabpanel">
-															
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Contabilización de Comprobante</h5>	
-															</div>
-
-															<div class="row">
-																<button type="submit" id="createOrderButton" class="btn btn-success">Generar entradas contables de pasivo</button>
-															</div>
-
-															<div class="row">
-																<h5 style="margin-bottom: 15px;margin-top: 15px;">Pago Único</h5>	
-															</div>
-
-															<div class="row">
-																<button type="submit" id="createOrderButton" class="btn btn-success">Realizar el pago de éste comprobante</button>
-															</div>
-
-															<div class="row">
-																<h5 style="margin-bottom: 15px;margin-top: 15px;">Contabilización de Pago</h5>	
-															</div>
-
-															<div class="row">
-																<button type="submit" id="createOrderButton" class="btn btn-success">Generar entradas contables del pago del comprobante</button>
-															</div>
-															
-
+													<!-- ID comprobante -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-input-icon kt-input-icon--left">
+															<input type="text" class="form-control" placeholder="ID Comprobante..." id="generalSearch">
+															<span class="kt-input-icon__icon kt-input-icon__icon--left">
+																<span><i class="la la-search"></i></span>
+															</span>
 														</div>
-														<div class="tab-pane" id="workflow-tab" role="tabpanel">
-															<table class="kt-datatable" id="tabla4" width="100%" style="min-height:50px!Important;">
-																	<thead>
-																		<tr>
-																			<th title="idarticulo">Nivel</th>
-																			<th title="descarticulo">Aprobador</th>
-																			<th title="um">Puesto</th>
-																			<th title="Field #4">Fecha Envío</th>
-																			<th title="Field #5">Estatus</th>
-																			<th title="Field #6">Fecha de aprobación</th>
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td><p>1</p></td>
-																			<td><p>Sandra Duran Linares</p></td>
-																			<td><p>Jefe de compras corp</p></td>
-																			<td><p>04/04/2019</p></td>
-																			<td><p style="color: green!Important;"><strong>Aprobada</strong></p></td>
-																			<td><p>04/04/2019</p></td>
-																		</tr>
-																		<tr>
-																			<td><p>2</p></td>
-																			<td><p>Almicar Hernandez</p></td>
-																			<td><p>Gerente General</p></td>
-																			<td><p>04/04/2019</p></td>
-																			<td><p style="color: yellow!Important;"><strong>Pendiente</strong></p></td>
-																			<td><p></p></td>
-																		</tr>
-																		<tr>
-																			<td><p>3</p></td>
-																			<td><p>Yair Hernandez</p></td>
-																			<td><p>Director de Compras</p></td>
-																			<td><p></p></td>
-																			<td><p style="color: red!Important;"><strong>No enviado</strong></p></td>
-																			<td><p></p></td>
-																		</tr>
-																	</tbody>
-																</table>
-														</div>
-														<div class="tab-pane" id="doctos-tab" role="tabpanel">
-															<div class="row">
-																<h5 style="margin-bottom: 15px;">Recepción</h5>	
-															</div>
-															<div class="row">
-																<div class="col-lg-12"><h6>ID Recepción:</h6></div>
-																<div class="col-lg-12"><h6>Fecha Recepción:</h6></div>
-																<div class="col-lg-12"><h6>Estado Recepción:</h6></div>
-															</div>
+													</div>
 
-															<div class="row" style="margin-top: 20px;">
-																<h5 style="margin-bottom: 15px;">Orden de Compra</h5>	
+													<!-- Factura -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-input-icon kt-input-icon--left">
+															<input type="text" class="form-control" placeholder="No. Factura..." id="generalSearch">
+															<span class="kt-input-icon__icon kt-input-icon__icon--left">
+																<span><i class="la la-search"></i></span>
+															</span>
+														</div>
+													</div>
+
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label">
+																<label>Tipo de Comprobante:</label>
 															</div>
-															<div class="row">
-																<div class="col-lg-12"><h6>ID Orden de Compra:</h6></div>
-																<div class="col-lg-12"><h6>Fecha Orden de Compra:</h6></div>
-																<div class="col-lg-12"><h6>Estado de Orden de Compra:</h6></div>
+															<div class="kt-form__control">
+																<select class="form-control bootstrap-select" id="kt_form_type">
+																	<option value="">Seleccione...</option>
+																	<option value="1">Tipo Comprobante 1</option>
+																	<option value="2">Tipo Comprobante 2</option>
+																</select>
 															</div>
 														</div>
 													</div>
 
 												</div>
-											</form>
-											
-										</div>
 
-										<!--footer-->
-										<div class="kt-portlet__foot">
-											<div class="row align-items-center">
-												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createOrderButton"
-													class="btn btn-success">Guardar</button>
+												<div class="row align-items-center" style="padding-top: 10px;">
+
+													<!-- proveedor -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label">
+																<label>Proveedor:</label>
+															</div>
+															<div class="kt-form__control">
+																<select class="form-control bootstrap-select" id="kt_form_type">
+																	<option value="">Seleccione...</option>
+																	<option value="1">Proveedor 1</option>
+																	<option value="2">Proveedor 2</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<!-- fecha -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+
+															<div class="kt-form__label" style="width: 50%;">
+																<label>De Fecha de Factura:</label>
+															</div>
+
+															<div class="kt-form__control" style="width: 60%;">
+																<input type="text" class="form-control" placeholder="" id="fechaOc">
+															</div>
+
+														</div>
+													</div>
+
+													<!-- fecha -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label" style="width: 40%;">
+																<label>A Fecha de Factura:</label>
+															</div>
+															<div class="kt-form__control" style="width: 60%">
+																<input type="text" class="form-control" placeholder="" id="fechaOc">
+															</div>
+														</div>
+													</div>
+
+													<!-- Origen de comprobante -->
+													<div class="col-md-2 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-input-icon kt-input-icon--left">
+															<input type="text" class="form-control" placeholder="Origen..." id="generalSearch">
+															<span class="kt-input-icon__icon kt-input-icon__icon--left">
+																<span><i class="la la-search"></i></span>
+															</span>
+														</div>
+													</div>
+
+													<!-- buscar -->
+													<div class="col-md-1 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<button type="button" class="btn btn-brand btn-icon-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+																<i class="la la-search"></i>
+															</button>
+														</div>
+													</div>													
+
 												</div>
 											</div>
+
 										</div>
 									</div>
 
+									<!--end: Search Form -->
 								</div>
-								
-							</div>
+								<div class="kt-portlet__body kt-portlet__body--fit">
 
-							<!--End::Section-->
+									<!--begin: Datatable -->
+									<div class="kt-datatable comprobanteTable" id="comprobanteTable"></div>
+
+									<!--end: Datatable -->
+								</div>
+							</div>
 
 						</div>
 
-						<!-- end:: Content -->
-
-						<!-- end:: Content -->
 					</div>
 
 					<!-- begin:: Footer -->
@@ -2461,23 +2148,22 @@
 		<!--end::Page Vendors -->
 
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
-		<script src="assets/app/custom/general/crud/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
-		<script src="assets/app/custom/general/crud/metronic-datatable/base/html-table.js" type="text/javascript"></script>
+		<script src="script/buscarComprobante.js" type="text/javascript"></script>
+
 		<!--end::Page Scripts -->
 
 		<!--begin::Global App Bundle(used by all pages) -->
 		<script src="assets/app/bundle/app.bundle.js" type="text/javascript"></script>
 
-		<!--end::Global App Bundle -->
-
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#createOrderButton").click(function(e){
-					alert("click al boton");
-				});
-			});
+			
+				$(document).ready(function(){
+
+		        });
+
 		</script>
+
+		<!--end::Global App Bundle -->
 	</body>
 
 	<!-- end::Body -->
