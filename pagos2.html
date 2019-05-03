@@ -161,7 +161,32 @@
 										<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
 											<ul class="kt-menu__subnav">
 												
-												<li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Contabilidad General</span></a></li>
+												<li class="kt-menu__item  kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Contabilidad General</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+													<!-- submenu -->
+													<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+														<ul class="kt-menu__subnav">
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Pólizas</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="polizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Carga de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="generadorPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Generador de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="plantillaPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Plantilla de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="edicionPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Edición de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="procesoPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Contabilización de Pólizas</span></a></li>
+																	</ul>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
 
 												<li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tesoreria</span></a></li>
 
@@ -1365,22 +1390,26 @@
 
 										<!-- contenido -->
 										<div class="kt-portlet__body kt-portlet__body--fit">
+											
 											<div class="row" style="padding: 10px;">
 												<div class="col-lg-12">
 													<div class="kt-datatable comprobanteTable" id="comprobanteTable"></div>		
 												</div>
 												<div class="col-lg-9" style="padding: 10px;text-align: right;">
-													<p>Total: <strong>$ 10000.00 MXN</strong></p>		
+													<p>Total: <strong>10,000.00</strong></p>		
 												</div>
 											</div>
 
 											<div class="row" style="padding: 10px; text-align: center;" id="editContainer">
-												<div class="col-lg-4"></div>
-												<div class="col-lg-4">
+												<div class="col-lg-6">
 													<button type="text" id="guardarButton" class="btn btn-success" style="width: 50%;">Guardar</button>
+												</div>
+												<div class="col-lg-6">
+													<button type="text" id="process" class="btn btn-success" style="width: 50%;">Procesar Pago</button>
 												</div>
 											</div>
 
+											<!--
 											<div class="row" style="padding: 10px; text-align: center;display: none;" id="sendAprobecontainer">
 												<div class="col-lg-4">
 												</div>
@@ -1388,6 +1417,7 @@
 													<button type="text" id="enviarAAprobacion" class="btn btn-success" style="width: 50%;">Enviar a Aprobación</button>
 												</div>
 											</div>
+											-->
 
 											<div class="row" style="padding: 10px; text-align: center;display: none;" id="aproveContainer">
 												<div class="col-lg-4">
@@ -1406,13 +1436,14 @@
 												</div>
 											</div>
 
+											<!--
 											<div class="row" style="padding: 20px; text-align: center;">
 												<div class="col-lg-12" style="text-align: center;">
 													<h5 style="color: #1dc9b7;">Estado:</h5>
 													<h5 id="statusText">Selección</h5>
 												</div>
-												
-											</div>											
+											</div>
+											-->											
 											
 										</div>
 									</div>
@@ -2165,9 +2196,7 @@
 
 				$("#guardarButton").click(function(e){
 					e.preventDefault();
-					$("#editContainer").hide();
-					$("#sendAprobecontainer").show();
-					$("#statusText").text("Guardado");
+					
 				});
 				$("#enviarAAprobacion").click(function(e){
 					e.preventDefault();

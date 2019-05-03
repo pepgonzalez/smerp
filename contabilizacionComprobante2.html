@@ -161,7 +161,32 @@
 										<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--left">
 											<ul class="kt-menu__subnav">
 												
-												<li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Contabilidad General</span></a></li>
+												<li class="kt-menu__item  kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Contabilidad General</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+													<!-- submenu -->
+													<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+														<ul class="kt-menu__subnav">
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Pólizas</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="polizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Carga de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="generadorPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Generador de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="plantillaPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Plantilla de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="edicionPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Edición de Pólizas</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="procesoPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Contabilización de Pólizas</span></a></li>
+																	</ul>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
 
 												<li class="kt-menu__item " aria-haspopup="true"><a href="javascript:;" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Tesoreria</span></a></li>
 
@@ -1207,12 +1232,12 @@
 																	<label>Contabilizar por:</label>
 																</div>
 																<div class="kt-form__control">
-																	<select class="form-control bootstrap-select" id="kt_form_type">
-																		<option value="">Seleccione...</option>
+																	<select class="form-control" id="selectFiltro">
+																		<option value="-1">Seleccione...</option>
 																		<option value="1">Todas las Empresas</option>
 																		<option value="2">Empresa</option>
-																		<option value="2">Comprobante</option>
-																		<option value="2">Origen</option>
+																		<option value="3">Comprobante</option>
+																		<option value="4">Origen</option>
 																	</select>
 																</div>
 															</div>
@@ -1237,15 +1262,15 @@
 														<tbody>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Empresa 1" disabled="true">
+																	<input type="text" class="form-control empresainput" value="Empresa 1" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="Origen 1" disabled="true">
+																	<input type="text" class="form-control origeninput" value="Origen 1" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="C00001" disabled="true">
+																	<input type="text" class="form-control comprobanteinput" value="C00001" disabled="true">
 																</td>
 
 																<td align="right">
@@ -1260,15 +1285,15 @@
 															</tr>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Empresa 2" disabled="true">
+																	<input type="text" class="form-control empresainput" value="Empresa 2" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="Origen 2" disabled="true">
+																	<input type="text" class="form-control origeninput" value="Origen 2" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="C00002" disabled="true">
+																	<input type="text" class="form-control comprobanteinput" value="C00002" disabled="true">
 																</td>
 
 																<td align="right">
@@ -2109,6 +2134,26 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+
+				$("#selectFiltro").change(function (e) {
+					var id = $( this ).val();
+					var text = $(this).text();
+    				
+    				$(document).find(".empresainput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".origeninput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".comprobanteinput").removeAttr("disabled").attr("disabled", "true");
+    				if(id == "2"){
+    					$(document).find(".empresainput").removeAttr("disabled");
+    				}
+    				if(id == "3"){
+    					$(document).find(".empresainput").removeAttr("disabled");	
+    					$(document).find(".comprobanteinput").removeAttr("disabled");
+    				}
+    				if(id == "4"){
+    					$(document).find(".empresainput").removeAttr("disabled");	
+    					$(document).find(".origeninput").removeAttr("disabled");	
+    				}
+  				});
 				
 				$("#buscarPagoButton").click(function(e){
 					e.preventDefault();

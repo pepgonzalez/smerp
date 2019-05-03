@@ -29999,3 +29999,9 @@ body {
       .kt-footer .kt-footer__menu .kt-footer__menu-link:first-child {
         padding-left: 0;
         margin-left: 0; } }
+
+.allcolumnbutton{
+  display: inline-block;
+  width: 30%;
+  padding: 3%;
+}

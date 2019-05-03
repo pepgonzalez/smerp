@@ -73,51 +73,27 @@ var KTDatatablesBasicScrollable = function() {
 
 		// begin second table
 		table.DataTable({
+			paging: false,
+			searching: false,
 			scrollY: '50vh',
 			scrollX: true,
 			scrollCollapse: true,
-			createdRow: function(row, data, index) {
-				var status = {
-					1: {'title': 'Pending', 'class': 'kt-badge--brand'},
-					2: {'title': 'Delivered', 'class': ' kt-badge--danger'},
-					3: {'title': 'Canceled', 'class': ' kt-badge--primary'},
-					4: {'title': 'Success', 'class': ' kt-badge--success'},
-					5: {'title': 'Info', 'class': ' kt-badge--info'},
-					6: {'title': 'Danger', 'class': ' kt-badge--danger'},
-					7: {'title': 'Warning', 'class': ' kt-badge--warning'},
-				};
-				var badge = '<span class="kt-badge ' + status[data[18]].class + ' kt-badge--inline kt-badge--pill">' + status[data[18]].title + '</span>';
-				row.getElementsByTagName('td')[18].innerHTML = badge;
-
-				status = {
-					1: {'title': 'Online', 'state': 'danger'},
-					2: {'title': 'Retail', 'state': 'primary'},
-					3: {'title': 'Direct', 'state': 'success'},
-				};
-				badge = '<span class="kt-badge kt-badge--' + status[data[19]].state + ' kt-badge--dot"></span>&nbsp;' +
-					'<span class="kt-font-bold kt-font-' + status[data[19]].state + '">' + status[data[19]].title + '</span>';
-				row.getElementsByTagName('td')[19].innerHTML = badge;
-			},
+			info: false,
 			columnDefs: [
 				{
 					targets: -1,
-					title: 'Actions',
+					title: 'Acciones',
 					orderable: false,
 					render: function(data, type, full, meta) {
 						return `
-                        <span class="dropdown">
-                            <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" data-toggle="dropdown" aria-expanded="true">
-                              <i class="la la-ellipsis-h"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a class="dropdown-item" href="#"><i class="la la-edit"></i> Edit Details</a>
-                                <a class="dropdown-item" href="#"><i class="la la-leaf"></i> Update Status</a>
-                                <a class="dropdown-item" href="#"><i class="la la-print"></i> Generate Report</a>
-                            </div>
-                        </span>
+						<div style="display:inline-block;width:100px;">
                         <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                          <i class="la la-edit"></i>
-                        </a>`;
+                          <i class="la la-plus-square"></i>
+                        </a>
+                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
+                          <i class="la la-remove"></i>
+                        </a>
+                        </div>`;
 					},
 				}],
 		});

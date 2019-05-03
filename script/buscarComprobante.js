@@ -52,33 +52,32 @@ var KTDatatableDataLocalDemo = function() {
 			// columns definition
 			columns: [
 				{
-					field: 'RecordID',
-					title: '#',
-					sortable: false,
-					width: 20,
-					type: 'number',
-					selector: {class: 'kt-checkbox--solid'},
-					textAlign: 'center',
-				}, {
 					field: 'OrderID',
 					title: 'ID Comprobante',
+					width: 140,
+					textAlign: 'center',
 				}, {
 					field: 'Country',
 					title: 'Empresa',
+					textAlign: 'center',
 				}, {
 					field: 'CompanyName',
 					title: 'Proveedor',
+					textAlign: 'center',
 				},{
 					field: 'ShipDate',
 					title: 'Fecha Factura',
 					type: 'date',
 					format: 'MM/DD/YYYY',
+					textAlign: 'center',
 				}, {
 					field: 'Type',
 					title: 'No. Factura',
+					textAlign: 'center',
 				}, {
 					field: 'Amount',
 					title: 'Origen',
+					textAlign: 'center',
 				}, {
 					field: 'Actions',
 					title: 'Acciones',
@@ -86,6 +85,7 @@ var KTDatatableDataLocalDemo = function() {
 					width: 110,
 					overflow: 'visible',
 					autoHide: false,
+					textAlign: 'center',
 					template: function() {
 						return '\
 						<a href="javascript:;" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Ver detalle">\
