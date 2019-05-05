@@ -1195,13 +1195,13 @@
 											<form class="kt-form kt-form--label-right">
 												<div class="kt-portlet__body" style="padding:10px;">
 													<div class="form-group row" style="margin-bottom: 0px;">
-														<div class="col-lg-8">
-															<label>Empresa:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="Empresa 1" disabled="true">
+														<div class="col-lg-6">
+															<label>Proceso:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="Proceso 1" disabled="true">
 														</div>
-														<div class="col-lg-4">
-															<label>Fecha Contable:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="10/04/2019" disabled="true">
+														<div class="col-lg-6">
+															<label>Descripción:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="El proceso de José 1" disabled="true">
 														</div>
 																												
 													</div>
@@ -1219,15 +1219,50 @@
 										<div class="kt-portlet__body kt-portlet__body--fit">
 
 											<form class="kt-form kt-form--label-right">
+
+												<div class="kt-portlet__head kt-portlet__head--lg">
+													<div class="kt-portlet__head-label">
+														
+														<!--
+														<span class="kt-portlet__head-icon">
+															<i class="kt-font-brand flaticon2-line-chart"></i>
+														</span>
+														-->
+														
+														<h3 class="kt-portlet__head-title">
+															Parámetros de Ejecución
+														</h3>
+
+													</div>
+													<div class="kt-portlet__head-toolbar">
+														<div class="kt-portlet__head-wrapper">
+															
+															<div class="dropdown dropdown-inline">
+																
+																<a href="#">
+																	<i style="font-size:20px;" class="flaticon2-add"></i>
+																</a>
+																<a href="#">
+																	<i style="font-size:20px;" class="flaticon2-close-cross"></i>
+																</a>
+																												
+															</div>
+														</div>
+													</div>
+												</div>
 												
 												<div class="kt-portlet__body">
 
-													<div class="form-group row" style="padding: 0px; margin: 0px;">
-														<h5 style="padding: 0px;margin: 0px;">Parámetros de Ejecución</h5>
-													</div>
-
 													<div class="form-group row">
-														<div class="col-lg-6">
+														<div class="col-lg-4">
+															<label>Empresa:</label>
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Empresa 1</option>
+																<option value="e2">Empresa 2</option>
+															</select>
+														</div>
+														<div class="col-lg-4">
 															<label>Acción:</label>
 															<select class="form-control m-select2" id="kt_select2_4" name="param">
 																<option></option>
@@ -1235,7 +1270,7 @@
 																<option value="e2">Descontabilizar</option>
 															</select>
 														</div>
-														<div class="col-lg-6">
+														<div class="col-lg-4">
 															<label>Origen:</label>
 															<select class="form-control m-select2" id="kt_select2_4" name="param">
 																<option></option>
