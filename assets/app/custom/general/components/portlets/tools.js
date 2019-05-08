@@ -8,90 +8,19 @@ var KTPortletTools = function () {
 
     // Demo 1
     var demo1 = function() {
+
+        var options = {
+            tools: {
+                toggle: {
+                    collapse: 'Cerrar',
+                    expand: 'Abrir'
+                },
+            },            
+        };
         // This portlet is lazy initialized using data-portlet="true" attribute. You can access to the portlet object as shown below and override its behavior
         var portlet = new KTPortlet('kt_portlet_tools_1');
-
-        // Toggle event handlers
-        portlet.on('beforeCollapse', function(portlet) {
-            setTimeout(function() {
-                toastr.info('Before collapse event fired!');
-            }, 100);
-        });
-
-        portlet.on('afterCollapse', function(portlet) {
-            setTimeout(function() {
-                toastr.warning('Before collapse event fired!');
-            }, 2000);            
-        });
-
-        portlet.on('beforeExpand', function(portlet) {
-            setTimeout(function() {
-                toastr.info('Before expand event fired!');
-            }, 100);  
-        });
-
-        portlet.on('afterExpand', function(portlet) {
-            setTimeout(function() {
-                toastr.warning('After expand event fired!');
-            }, 2000);
-        });
-
-        // Remove event handlers
-        portlet.on('beforeRemove', function(portlet) {
-            toastr.info('Before remove event fired!');
-
-            return confirm('Are you sure to remove this portlet ?');  // remove portlet after user confirmation
-        });
-
-        portlet.on('afterRemove', function(portlet) {
-            setTimeout(function() {
-                toastr.warning('After remove event fired!');
-            }, 2000);            
-        });
-
-        // Reload event handlers
-        portlet.on('reload', function(portlet) {
-            toastr.info('Leload event fired!');
-
-            KTApp.block(portlet.getSelf(), {
-                overlayColor: '#ffffff',
-                type: 'loader',
-                state: 'success',
-                opacity: 0.3,
-                size: 'lg'
-            });
-
-            // update the content here
-
-            setTimeout(function() {
-                KTApp.unblock(portlet.getSelf());
-            }, 2000);
-        });
-
-        // Reload event handlers
-        portlet.on('afterFullscreenOn', function(portlet) {
-            toastr.warning('After fullscreen on event fired!');    
-            var scrollable = $(portlet.getBody()).find('> .kt-scroll');
-
-            if (scrollable) {
-                scrollable.data('original-height', scrollable.css('height'));
-                scrollable.css('height', '100%');
-                
-                KTUtil.scrollUpdate(scrollable[0]);
-            }
-        });
-
-        portlet.on('afterFullscreenOff', function(portlet) {
-            toastr.warning('After fullscreen off event fired!');    
-            var scrollable = $(portlet.getBody()).find('> .kt-scroll');
-
-            if (scrollable) {
-                var scrollable = $(portlet.getBody()).find('> .kt-scroll');
-                scrollable.css('height', scrollable.data('original-height'));
-
-                KTUtil.scrollUpdate(scrollable[0]);
-            }
-        });
+        portlet.options.tools.toggle.collapse = "Cerrar";
+        portlet.options.tools.toggle.expand = "Abrir";
     }
 
     // Demo 2
@@ -399,7 +328,7 @@ var KTPortletTools = function () {
             initToastr();
 
             // init demos
-            //demo1();
+            demo1();
             //demo2();
             //demo3();
             demo4();
