@@ -4989,9 +4989,9 @@ $(document).ready(function() {
 			 */
 			rows: function(selector) {
 				if (Plugin.isLocked()) {
-					Plugin.nodeTr = Plugin.recentNode = t(datatable.tableBody).find(selector).filter('.' + pfx + 'datatable__lock--scroll > .' + pfx + 'datatable__row');
+					Plugin.nodeTr = Plugin.recentNode = $(datatable.tableBody).find(selector).filter('.' + pfx + 'datatable__lock--scroll > .' + pfx + 'datatable__row');
 				} else {
-					Plugin.nodeTr = Plugin.recentNode = t(datatable.tableBody).find(selector).filter('.' + pfx + 'datatable__row');
+					Plugin.nodeTr = Plugin.recentNode = $(datatable.tableBody).find(selector).filter('.' + pfx + 'datatable__row');
 				}
 				return datatable;
 			},
