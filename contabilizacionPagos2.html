@@ -1232,12 +1232,12 @@
 																	<label>Contabilizar por:</label>
 																</div>
 																<div class="kt-form__control">
-																	<select class="form-control bootstrap-select" id="kt_form_type">
+																	<select class="form-control" id="selectFiltro">
 																		<option value="">Seleccione...</option>
 																		<option value="1">Cuenta Bancaria</option>
 																		<option value="2">Método de Pago</option>
-																		<option value="2">Pago</option>
-																		<option value="2">Todos los pagos</option>
+																		<option value="3">Pago</option>
+																		<option value="4">Todos los pagos</option>
 																	</select>
 																</div>
 															</div>
@@ -1264,21 +1264,21 @@
 														<tbody>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Agrupador 1" disabled="true">
+																	<input type="text" class="form-control agrupadorInput" value="Agrupador 1" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="AFI" disabled="true">
+																	<input type="text" class="form-control bancoInput" value="AFI" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="812312345" disabled="true">
+																	<input type="text" class="form-control cuentaInput" value="812312345" disabled="true">
 																</td>
 																<td>
-																	<input type="text" class="form-control" value="Transferencia electrónica" disabled="true">
+																	<input type="text" class="form-control mpinput" value="Transferencia electrónica" disabled="true">
 																</td>
 																<td>
-																	<input type="text" class="form-control" value="1904221" disabled="true">
+																	<input type="text" class="form-control refinput" value="1904221" disabled="true">
 																</td>
 
 																<td align="right">
@@ -1293,21 +1293,21 @@
 															</tr>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Agrupador 1" disabled="true">
+																	<input type="text" class="form-control agrupadorInput" value="Agrupador 1" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="BAN" disabled="true">
+																	<input type="text" class="form-control bancoInput" value="BAN" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="818888999" disabled="true">
+																	<input type="text" class="form-control cuentaInput" value="818888999" disabled="true">
 																</td>
 																<td>
-																	<input type="text" class="form-control" value="Transferencia electrónica" disabled="true">
+																	<input type="text" class="form-control mpinput" value="Transferencia electrónica" disabled="true">
 																</td>
 																<td>
-																	<input type="text" class="form-control" value="1904221" disabled="true">
+																	<input type="text" class="form-control refinput" value="1904221" disabled="true">
 																</td>
 
 																<td align="right">
@@ -2148,6 +2148,36 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+
+				$("#selectFiltro").change(function (e) {
+					var id = $( this ).val();
+					var text = $(this).text();
+    				
+    				$(document).find(".agrupadorInput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".bancoInput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".cuentaInput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".mpinput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".refinput").removeAttr("disabled").attr("disabled", "true");
+
+    				if(id == "1"){
+    					$(document).find(".agrupadorInput").removeAttr("disabled");
+    					$(document).find(".bancoInput").removeAttr("disabled");
+    					$(document).find(".cuentaInput").removeAttr("disabled");
+    				}
+    				if(id == "2"){
+    					$(document).find(".agrupadorInput").removeAttr("disabled");
+    					$(document).find(".bancoInput").removeAttr("disabled");
+    					$(document).find(".cuentaInput").removeAttr("disabled");
+    					$(document).find(".mpinput").removeAttr("disabled");
+    				}
+    				if(id == "3"){
+    					$(document).find(".agrupadorInput").removeAttr("disabled");
+    					$(document).find(".bancoInput").removeAttr("disabled");
+    					$(document).find(".cuentaInput").removeAttr("disabled");
+    					$(document).find(".mpinput").removeAttr("disabled");
+    					$(document).find(".refinput").removeAttr("disabled");
+    				}
+  				});
 				
 				$("#buscarPagoButton").click(function(e){
 					e.preventDefault();

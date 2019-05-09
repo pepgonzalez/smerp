@@ -1233,12 +1233,12 @@
 																	<label>Opción de Proceso:</label>
 																</div>
 																<div class="kt-form__control" style="width: 70%;">
-																	<select class="form-control bootstrap-select" id="kt_form_type">
+																	<select class="form-control bootstrap-select" id="selectFiltro">
 																		<option value="">Seleccione...</option>
 																		<option value="1">Por Empresa</option>
 																		<option value="2">Por Origen</option>
-																		<option value="2">Por Proveedor</option>
-																		<option value="2">Todas las empresas</option>
+																		<option value="3">Por Proveedor</option>
+																		<option value="4">Todas las empresas</option>
 																	</select>
 																</div>
 															</div>
@@ -1285,15 +1285,15 @@
 														<tbody>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Empresa 1" disabled="true">
+																	<input type="text" class="form-control empresainput" value="Empresa 1" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="Origen 1" disabled="true">
+																	<input type="text" class="form-control origeninput" value="Origen 1" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="Proveedor 1" disabled="true">
+																	<input type="text" class="form-control comprobanteinput" value="Proveedor 1" disabled="true">
 																</td>
 
 																<td align="right">
@@ -1308,15 +1308,15 @@
 															</tr>
 															<tr>
 																<td>
-																	<input type="text" class="form-control" value="Empresa 2" disabled="true">
+																	<input type="text" class="form-control empresainput" value="Empresa 2" disabled="true">
 																</td>
 																
 																<td>
-																	<input type="text" class="form-control" value="Origen 2" disabled="true">
+																	<input type="text" class="form-control origeninput" value="Origen 2" disabled="true">
 																</td>
 
 																<td>
-																	<input type="text" class="form-control" value="Proveedor 2" disabled="true">
+																	<input type="text" class="form-control comprobanteinput" value="Proveedor 2" disabled="true">
 																</td>
 
 																<td align="right">
@@ -2157,6 +2157,27 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+
+				$("#selectFiltro").change(function (e) {
+					var id = $( this ).val();
+					var text = $(this).text();
+    				
+    				$(document).find(".empresainput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".origeninput").removeAttr("disabled").attr("disabled", "true");
+    				$(document).find(".comprobanteinput").removeAttr("disabled").attr("disabled", "true");
+    				
+    				if(id == "1"){
+    					$(document).find(".empresainput").removeAttr("disabled");
+    				}
+    				if(id == "2"){
+    					$(document).find(".empresainput").removeAttr("disabled");	
+    					$(document).find(".origeninput").removeAttr("disabled");
+    				}
+    				if(id == "3"){
+    					$(document).find(".empresainput").removeAttr("disabled");	
+    					$(document).find(".comprobanteinput").removeAttr("disabled");	
+    				}
+  				});
 				
 				$("#buscarPagoButton").click(function(e){
 					e.preventDefault();
