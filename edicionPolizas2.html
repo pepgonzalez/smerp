@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | Búsqueda de Pólizas</title>
+		<title>SMART ERP | Edición de Pólizas</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -267,7 +267,11 @@
 										</div>
 									</li>
 
-									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="#" class="kt-menu__link "><span class="kt-menu__link-text">Contabilidad > Pólizas > Edición de Pólizas</span></a></li>
+									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
+										<a href="#" class="kt-menu__link ">
+											<span class="kt-menu__link-text">Contabilidad > Pólizas > Edición de Pólizas</span>
+										</a>
+									</li>
 
 									<!--
 									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i></a>
@@ -1131,55 +1135,11 @@
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
 						<!-- begin:: Subheader -->
-						<!--
 						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
-							<div class="kt-subheader__main">
-								<h3 class="kt-subheader__title">
-									Contabilidad > Pólizas > Búsqueda de Pólizas </h3>
-							</div>
 							
-							<div class="kt-subheader__toolbar">
-								<div class="kt-subheader__wrapper">
-									
-									
-
-									<div class="dropdown dropdown-inline" data-toggle="kt-tooltip" title="Acciones Rápidas" data-placement="left">
-										<a href="#" class="btn btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="kt-svg-icon kt-svg-icon--success kt-svg-icon--md">
-												<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-													<polygon id="Shape" points="0 0 24 0 24 24 0 24" />
-													<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" id="Combined-Shape" fill="#000000" fill-rule="nonzero" opacity="0.3" />
-													<path d="M11,14 L9,14 C8.44771525,14 8,13.5522847 8,13 C8,12.4477153 8.44771525,12 9,12 L11,12 L11,10 C11,9.44771525 11.4477153,9 12,9 C12.5522847,9 13,9.44771525 13,10 L13,12 L15,12 C15.5522847,12 16,12.4477153 16,13 C16,13.5522847 15.5522847,14 15,14 L13,14 L13,16 C13,16.5522847 12.5522847,17 12,17 C11.4477153,17 11,16.5522847 11,16 L11,14 Z" id="Combined-Shape" fill="#000000" />
-												</g>
-											</svg>
-
-										</a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<ul class="kt-nav">
-												
-												<li class="kt-nav__section kt-nav__section--first">
-													<span class="kt-nav__section-text">Acciones</span>
-												</li>
-												
-												<li class="kt-nav__item">
-													<a href="#" class="kt-nav__link">
-														<i class="kt-nav__link-icon flaticon2-graph-1"></i>
-														<span class="kt-nav__link-text">Crear Póliza</span>
-													</a>
-												</li>
-												
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
-						-->
 
 						<!-- end:: Subheader -->
-						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
-							
-						</div>
 
 						<!-- begin:: Content -->
 
@@ -1192,20 +1152,57 @@
 							<div class="row">
 								
 								<div class="col-xl-12">
+
+									<div class="kt-portlet kt-portlet--mobile">
+
+										<!-- contenido -->
+										<div class="kt-portlet__body kt-portlet__body--fit">
+
+											<form class="kt-form kt-form--label-right">
+												<div class="kt-portlet__body" style="padding:10px;">
+													<div class="form-group row" style="margin-bottom: 0px;">
+														<div class="col-lg-6">
+															<label>Id Proceso:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="Proceso 1" disabled="true">
+														</div>
+														<div class="col-lg-6">
+															<label>Descripción:</label>
+															<input type="email" class="form-control" placeholder="" value="Edición de Póliza 1" disabled="true">
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
 									
-									<div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile">
+									<div class="kt-portlet kt-portlet--mobile">
 										
 										<!-- header -->
 										<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--break-sm">
 											
 											<div class="kt-portlet__head-label">
 												<h3 class="kt-portlet__head-title">
-													Edición de Pólizas
+													Proceso de edición de Pólizas
 												</h3>
 											</div>
 											
 											<!-- herramientas del header -->
-											
+											<div class="kt-portlet__head-toolbar">
+												<div class="kt-portlet__head-wrapper">
+													
+													<div class="dropdown dropdown-inline">
+														
+														<a href="#">
+															<i style="font-size:20px;" class="flaticon2-add"></i>
+														</a>
+														<a href="#">
+															<i style="font-size:20px;" class="flaticon2-close-cross"></i>
+														</a>
+																										
+													</div>
+												</div>
+											</div>
+
 										</div>
 
 										<!-- contenido -->
@@ -1214,24 +1211,66 @@
 											<form class="kt-form kt-form--label-right">
 												<div class="kt-portlet__body">
 													
+													<div class="form-group row">
+														
+														<label class="col-form-label col-lg-1 col-sm-12">Empresa</label>
+														
+														<div class="col-lg-5 col-md-9 col-sm-12">
+
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Empresa 1</option>
+																<option value="e2">Empresa 2</option>
+															</select>
+
+														</div>
+													</div>
 
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Id Proceso</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
-															<select class="form-control kt-selectpicker">
-																<option>Seleccione...</option>
-																<option>Proceso 1</option>
-																<option>Proceso 2</option>
+														<label class="col-form-label col-lg-1 col-sm-12">Concepto</label>
+														<div class="col-lg-5 col-md-9 col-sm-12">
+															<input type="text" class="form-control" readonly="" placeholder="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12">Origen</label>
+														<div class="col-lg-5 col-md-9 col-sm-12">
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Origen 1</option>
+																<option value="e2">Origen 2</option>
 															</select>
 														</div>
 													</div>
 
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Descripción</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
-															<input type="text" class="form-control" readonly="" placeholder="">
+														<label class="col-form-label col-lg-1 col-sm-12">De Fecha</label>
+														<div class="col-lg-2 col-md-9 col-sm-12">
+															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12">A Fecha</label>
+														<div class="col-lg-2 col-md-9 col-sm-12">
+															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="" value="">
+														</div>
+
+														<label class="col-form-label col-lg-1 col-sm-12" style="padding-right: 0px;">De ID Asiento</label>
+														<div class="col-lg-2 col-md-9 col-sm-12">
+															<input type="text" class="form-control" readonly="" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12">A ID Asiento</label>
+														<div class="col-lg-2 col-md-9 col-sm-12">
+															<input type="text" class="form-control" readonly="" placeholder="" value="">
 														</div>
 													</div>
+
+													<div class="form-group row">
+														<div class="col-lg-3" style="margin-top: 10px;">
+															<button style="width: 100%;" type="submit" id="createOrderButton" class="btn btn-success">Guardar</button>
+														</div>
+
+														<div class="col-lg-3" style="margin-top: 10px;">
+															<button style="width: 100%;" type="submit" id="createOrderButton" class="btn btn-success">Ejecutar</button>
+														</div>
+													</div>
+
 
 												</div>
 											</form>
@@ -1239,14 +1278,7 @@
 										</div>
 
 										<!--footer-->
-										<div class="kt-portlet__foot">
-											<div class="row align-items-center">
-												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createOrderButton"
-													class="btn btn-success">Crear Proceso</button>
-												</div>
-											</div>
-										</div>
+										
 									</div>
 								</div>
 								
@@ -1687,12 +1719,6 @@
 		<!-- end::Scrolltop -->
 
 		<!-- begin::Sticky Toolbar -->
-		<ul class="kt-sticky-toolbar" style="margin-top: 30px;">
-			
-			<li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--warning" data-toggle="kt-tooltip" title="Documentación" data-placement="left">
-				<a href="https://keenthemes.com/metronic/?page=docs" target="_blank"><i class="flaticon2-telegram-logo"></i></a>
-			</li>
-		</ul>
 
 		<!-- end::Sticky Toolbar -->
 
@@ -1990,7 +2016,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#createOrderButton").click(function(e){
-					window.location.href = "edicionPolizas2.html";
+					window.location.href = "procesoPolizas2.html";
 				});
 			});
 		</script>
