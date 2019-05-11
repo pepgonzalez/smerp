@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | Pagos</title>
+		<title>SMART ERP | Búsqueda de Pólizas</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -269,7 +269,11 @@
 										</div>
 									</li>
 
-									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="#" class="kt-menu__link "><span class="kt-menu__link-text">Cuentas por pagar > Procesos Masivos > Contabilización de Pagos</span></a></li>
+									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
+										<a href="#" class="kt-menu__link ">
+											<span class="kt-menu__link-text">Contabilidad General > Pólizas > Búsqueda de Pólizas</span>
+										</a>
+									</li>
 									<!--
 									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i></a>
 										
@@ -780,6 +784,97 @@
 							-->
 
 							<!--end: Notifications -->
+							<div class="kt-header__topbar-item dropdown">
+
+								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
+									
+									<span class="kt-header__topbar-icon kt-header__topbar-icon--success">
+										<i class="flaticon2-bell-alarm-symbol"></i>
+										
+										
+										
+									</span>
+									
+									<span class="kt-hidden kt-badge kt-badge--danger"></span>
+
+									
+									
+									
+
+								</div>
+								
+								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+									<form>
+
+										<!--begin: Head -->
+										<div class="kt-head kt-head--skin-light kt-head--fit-x kt-head--fit-b">
+											<h3 class="kt-head__title">
+												Notificaciones
+												&nbsp;
+												
+												<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">1 nueva(s)</span>
+												
+											</h3>
+											<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand  kt-notification-item-padding-x" role="tablist">
+
+												<li class="nav-item">
+													<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Nuevas</a>
+												</li>
+												
+												<li class="nav-item">
+													<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Todas</a>
+												</li>
+
+											</ul>
+										</div>
+
+										<!--end: Head -->
+										<div class="tab-content">
+											
+											<div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true">
+													
+													<a href="compras2.html" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-doc kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																La orden de Compra 00000001 ha sido aprobada
+															</div>
+															<div class="kt-notification__item-time">
+																hace 23 hrs
+															</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+											
+											<div class="tab-pane active" id="topbar_notifications_logs" role="tabpanel">
+												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true">
+													
+													<a href="compras2.html" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-doc kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																La orden de Compra 00000002 ha sido aprobada
+															</div>
+															<div class="kt-notification__item-time">
+																hace unos segundos
+															</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+
+										</div>
+									</form>
+								</div>
+							</div>
 
 							<!--begin: Quick actions -->
 							<div class="kt-header__topbar-item dropdown">
@@ -1133,7 +1228,6 @@
 
 						<!-- begin:: Subheader -->
 						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
-							
 						</div>
 
 						<!-- end:: Subheader -->
@@ -1143,102 +1237,115 @@
 						<!-- begin:: Content -->
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
 
-							<!--Begin::Dashboard 7-->
-
-							<!--Begin::Section-->
-							<div class="row">
-								
-								<div class="col-xl-12">
-									
-									<div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile">
+							<div class="kt-portlet kt-portlet--mobile">
+								<div class="kt-portlet__head kt-portlet__head--lg">
+									<div class="kt-portlet__head-label">
 										
-										<!-- header -->
-										<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--break-sm">
+										<h3 class="kt-portlet__head-title">
+											Listado de Pólizas
+										</h3>
+
+									</div>
+									<!--
+									<div class="kt-portlet__head-toolbar">
+										<div class="kt-portlet__head-wrapper">
 											
-											<div class="kt-portlet__head-label">
-												<h3 class="kt-portlet__head-title">
-													Nuevo Proceso de Contabilización de Pagos
-												</h3>
-											</div>
-											
-											<!-- herramientas del header -->
-											<div class="kt-portlet__head-toolbar">
-												<div class="dropdown dropdown-inline">
-													<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<i class="flaticon-more-1"></i>
-													</button>
-													<div class="dropdown-menu dropdown-menu-right">
-														<ul class="kt-nav">
-															<li class="kt-nav__item">
-																<a href="#" class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-line-chart"></i>
-																	<span class="kt-nav__link-text">Reportes</span>
-																</a>
-															</li>
-															
-															<li class="kt-nav__item">
-																<a href="#" class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-settings"></i>
-																	<span class="kt-nav__link-text">Configuración</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<!-- contenido -->
-										<div class="kt-portlet__body kt-portlet__body--fit">
-
-											<form class="kt-form kt-form--label-right">
-												<div class="kt-portlet__body">
-													
-													
-													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">ID Proceso:</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
-															<select class="form-control kt-selectpicker">
-																<option>Seleccione...</option>
-																<option>PAGOS_SMART</option>
-																<option>Proceso de Contabilización de Pagos 2</option>
-															</select>
-														</div>
-													</div>
-
-													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Descripción:</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
-															<input type="text" name="providerName" class="form-control" placeholder="">
-														</div>
-													</div>
-
-												</div>
-											</form>
-											
-										</div>
-
-										<!--footer-->
-										<div class="kt-portlet__foot">
-											<div class="row align-items-center">
-												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createProcessButton"
-													class="btn btn-success">Crear Proceso</button>
-												</div>
+											<div class="dropdown dropdown-inline">
+												
+												<button type="button" class="btn btn-brand btn-icon-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href = 'comprobante1.html';">
+													<i class="flaticon2-plus"></i> Crear comprobante
+												</button>
+																								
 											</div>
 										</div>
 									</div>
+									-->
 								</div>
-								
-							</div>
+								<div class="kt-portlet__body">
 
-							<!--End::Section-->
+									<!--begin: Search Form -->
+									<div class="kt-form kt-form--label-right kt-margin-t-20 kt-margin-b-10">
+										<div class="row align-items-center">
+											
+											<div class="col-xl-8 order-2 order-xl-1">
+												
+												<div class="row align-items-center">
+													
+													<!-- Empresa -->
+													<div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label">
+																<label>Empresa:</label>
+															</div>
+															<div class="kt-form__control">
+																<select class="form-control bootstrap-select" id="kt_form_status">
+																	<option value="">Seleccione...</option>
+																	<option value="1">Empresa 1</option>
+																	<option value="2">Empresa 2</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-4 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<div class="kt-form__label">
+																<label>Id Asiento:</label>
+															</div>
+															<div class="kt-form__control">
+																<select class="form-control bootstrap-select" id="kt_form_status">
+																	<option value="">Seleccione...</option>
+																	<option value="1">Asiento 1</option>
+																	<option value="2">Asiento 2</option>
+																</select>
+															</div>
+														</div>
+													</div>
+
+													<!-- fecha -->
+													<div class="col-md-3 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+
+															<div class="kt-form__label" style="width: 50%;">
+																<label>Fecha Contable:</label>
+															</div>
+
+															<div class="kt-form__control" style="width: 60%;">
+																<input type="text" class="form-control" placeholder="" id="fechaOc">
+															</div>
+
+														</div>
+													</div>
+
+													<!-- buscar -->
+													<div class="col-md-1 kt-margin-b-20-tablet-and-mobile">
+														<div class="kt-form__group kt-form__group--inline">
+															<button type="button" class="btn btn-brand btn-icon-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+																<i class="la la-search"></i>
+															</button>
+														</div>
+													</div>	
+
+												</div>
+
+											</div>
+
+										</div>
+									</div>
+
+									<!--end: Search Form -->
+								</div>
+								<div class="kt-portlet__body kt-portlet__body--fit">
+
+									<!--begin: Datatable -->
+									<div class="kt-datatable comprobanteTable" id="comprobanteTable"></div>
+
+									<!--end: Datatable -->
+								</div>
+							</div>
 
 						</div>
 
-						<!-- end:: Content -->
-
-						<!-- end:: Content -->
 					</div>
 
 					<!-- begin:: Footer -->
@@ -1955,27 +2062,23 @@
 		<!--end::Page Vendors -->
 
 		<!--begin::Page Scripts(used by this page) -->
-		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
+		<script src="script/buscarPoliza.js" type="text/javascript"></script>
 
 		<!--end::Page Scripts -->
 
 		<!--begin::Global App Bundle(used by all pages) -->
 		<script src="assets/app/bundle/app.bundle.js" type="text/javascript"></script>
 
-				
-		<script src="assets/app/custom/general/crud/forms/widgets/select2.js" type="text/javascript"></script>
-		<!--end::Global App Bundle -->
-
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#createProcessButton").click(function(e){
-					window.location.href = "contabilizacionPagos2.html";
-				});
-			});
-		</script>
-	</body>
+			
+				$(document).ready(function(){
 
-	
+		        });
+
+		</script>
+
+		<!--end::Global App Bundle -->
+	</body>
 
 	<!-- end::Body -->
 </html>
