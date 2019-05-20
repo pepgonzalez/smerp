@@ -75,69 +75,23 @@ var KTDatatablesBasicScrollable = function() {
 		table.DataTable({
 			paging: false,
 			searching: false,
-			scrollY: '50vh',
+			scrollY: true,
+			scrollY:'250px',
 			scrollX: true,
 			scrollCollapse: true,
 			info: false,
-			columnDefs: [
-				{
-					targets: -1,
-					title: 'Acciones',
-					orderable: false,
-					render: function(data, type, full, meta) {
-						return `
-						<div style="display:inline-block;width:100px;">
-                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                          <i class="la la-plus-square"></i>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                          <i class="la la-remove"></i>
-                        </a>
-                        </div>`;
-					},
-				}],
+			columnDefs: [],
 		});
 	};
 
-	var initTable5 = function() {
-		var table = $('#kt_table_5');
+	var initTable3 = function() {
+		var table = $('#kt_table_3');
 
 		// begin second table
 		table.DataTable({
 			paging: false,
 			searching: false,
-			scrollY: '50vh',
-			scrollX: true,
-			scrollCollapse: true,
-			info: false,
-			columnDefs: [
-				{
-					targets: -1,
-					title: 'Acciones',
-					orderable: false,
-					render: function(data, type, full, meta) {
-						return `
-						<div style="display:inline-block;width:100px;">
-                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                          <i class="la la-plus-square"></i>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
-                          <i class="la la-remove"></i>
-                        </a>
-                        </div>`;
-					},
-				}],
-		});
-	};
-
-	var initTable4 = function() {
-		var table = $('#kt_table_4');
-
-		// begin second table
-		table.DataTable({
-			paging: false,
-			searching: false,
-			scrollY: '50vh',
+			scrollY:'250px',
 			scrollX: true,
 			scrollCollapse: true,
 			info: false,
@@ -149,10 +103,8 @@ var KTDatatablesBasicScrollable = function() {
 
 		//main function to initiate the module
 		init: function() {
-			initTable1();
 			initTable2();
-			initTable4();
-			initTable5();
+			initTable3();
 		},
 
 	};
