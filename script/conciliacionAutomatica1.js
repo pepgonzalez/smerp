@@ -113,4 +113,23 @@ var KTDatatablesBasicScrollable = function() {
 
 jQuery(document).ready(function() {
 	KTDatatablesBasicScrollable.init();
+
+	$('#bancoSelect').on('change', function() {
+  		var banco = parseInt(this.value);
+  		if(banco == 1){
+  			$("#cuentaBancariaSelect").empty();
+  			var o1 = new Option("Cuenta A", "A");
+  			var o2 = new Option("Cuenta B", "B");
+  			$("#cuentaBancariaSelect").append(o1);
+  			$("#cuentaBancariaSelect").append(o2);
+  		}else if(banco == 2){
+  			$("#cuentaBancariaSelect").empty();
+  			var o1 = new Option("Cuenta C", "C");
+  			var o2 = new Option("Cuenta D", "D");
+  			$("#cuentaBancariaSelect").append(o1);
+  			$("#cuentaBancariaSelect").append(o2);
+  		}else{
+  			$("#cuentaBancariaSelect").empty();
+  		}
+	});
 });

@@ -1246,7 +1246,7 @@
 														</div>
 														<div class="col-lg-2">
 															<label>Fecha Transacción:</label>
-															<input type="text" class="form-control" id="kt_datepicker_1" placeholder="" />
+															<input type="text" class="form-control" id="fechaTrans" placeholder="" />
 														</div>
 																												
 													</div>
@@ -1371,7 +1371,7 @@
 														</div>
 														<div class="col-lg-8"></div>
 														<div class="col-lg-2">
-															<button type="button" class="btn btn-brand btn-icon-sm" style="display: none;" id="botonaprobacion">
+															<button type="button" class="btn btn-brand btn-icon-sm" id="botonaprobacion">
 																Envío a Aprobación
 															</button>
 														</div>
@@ -2201,7 +2201,30 @@
 		<!--end::Global App Bundle -->
 
 		<script type="text/javascript">
+
+			function getParameterByName( name ) //courtesy Artem
+			{
+			  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			  var regexS = "[\\?&]"+name+"=([^&#]*)";
+			  var regex = new RegExp( regexS );
+			  var results = regex.exec( window.location.href );
+			  if( results == null )
+			    return "";
+			  else
+			  {
+			    if ((results[1].indexOf('?'))>0)
+			        return decodeURIComponent(results[1].substring(0,results[1].indexOf('?')).replace(/\+/g, " "));
+			    else
+			        return decodeURIComponent(results[1].replace(/\+/g, " "));
+			  }
+			}
+
+
 			$(document).ready(function(){
+
+				var theId = getParameterByName("fecha");
+				$("#fechaTrans").val(theId);
+
 				$("#createOrderButton").click(function(e){
 					alert("click al boton");
 				});

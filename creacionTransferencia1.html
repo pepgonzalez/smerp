@@ -1290,7 +1290,7 @@
 													<div class="form-group row">
 														<label class="col-form-label col-lg-2 col-sm-12">Fecha de Transacción:</label>
 														<div class="col-lg-4 col-md-9 col-sm-12">
-															<input type="text" class="form-control" id="kt_datepicker_1" placeholder="" />
+															<input type="text" class="form-control" id="kt_datepicker_1" placeholder=""/>
 														</div>
 													</div>
 
@@ -2052,7 +2052,7 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#createOrderButton").click(function(e){
-					window.location.href = "creacionTransferencia2.html";
+					window.location.href = "creacionTransferencia2.html?fecha="+$("#kt_datepicker_1").val();
 				});
 			});
 		</script>
