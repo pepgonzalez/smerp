@@ -1,9 +1,9 @@
-Em<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | GasEmtos</title>
+		<title>SMART ERP | Gastos</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -334,7 +334,7 @@ Em<!DOCTYPE html>
 
 									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
 										<a href="#" class="kt-menu__link ">
-											<span class="kt-menu__link-text">Gastos > Solicitud > Nueva solicitud</span>
+											<span class="kt-menu__link-text">Gastos > Comprobación > Nueva comprobación</span>
 										</a>
 									</li>
 
@@ -1200,7 +1200,8 @@ Em<!DOCTYPE html>
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
 						<!-- begin:: Subheader -->
-						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
+						<div class="kt-subheader kt-grid__item" id="kt_subheader">
+							
 						</div>
 
 						<!-- end:: Subheader -->
@@ -1217,89 +1218,735 @@ Em<!DOCTYPE html>
 								
 								<div class="col-xl-12">
 									
-									<div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile">
-										
-										<!-- header -->
-										<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--break-sm">
-											
-											<div class="kt-portlet__head-label">
-												<h3 class="kt-portlet__head-title">
-													Solicitud de Gastos
-												</h3>
-											</div>
-											
-											<!-- herramientas del header -->
-											<div class="kt-portlet__head-toolbar">
-												<div class="dropdown dropdown-inline">
-													<button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<i class="flaticon-more-1"></i>
-													</button>
-													<div class="dropdown-menu dropdown-menu-right">
-														<ul class="kt-nav">
-															<li class="kt-nav__item">
-																<a href="#" class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-line-chart"></i>
-																	<span class="kt-nav__link-text">Reportes</span>
-																</a>
-															</li>
-															
-															<li class="kt-nav__item">
-																<a href="#" class="kt-nav__link">
-																	<i class="kt-nav__link-icon flaticon2-settings"></i>
-																	<span class="kt-nav__link-text">Configuración</span>
-																</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
+									<div class="kt-portlet kt-portlet--mobile">
 
 										<!-- contenido -->
 										<div class="kt-portlet__body kt-portlet__body--fit">
 
 											<form class="kt-form kt-form--label-right">
+												<div class="kt-portlet__body" style="padding:10px;">
+													<div class="form-group row" style="margin-bottom: 0px;">
+														<div class="col-lg-2">
+															<label>Empresa:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="Empresa 1" disabled="true">
+														</div>
+														<div class="col-lg-2">
+															<label>Fecha de Creación:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="10/04/2019" disabled="true">
+														</div>
+														
+														<div class="col-lg-2">
+															<label>Empleado:</label>
+															<input type="email" class="form-control" placeholder="Next" value="José González" disabled="true">
+														</div>
+														<div class="col-lg-2">
+															<label>Estado Contabilización:</label>
+															<input type="email" class="form-control" placeholder="Next" value="No contabilizado" disabled="true">
+														</div>
+														<div class="col-lg-2">
+															<label>ID Comprobación:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="Nueva" disabled="true">
+														</div>
+														<div class="col-lg-2">
+															<label>Estado Comprobación:</label>
+															<input type="email" class="form-control" placeholder="Enter full name" value="Inicial" disabled="true">
+														</div>														
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="kt-portlet kt-portlet--mobile">
+										
+										<!-- header -->
+										
+
+										<!-- contenido -->
+										<div class="kt-portlet__body kt-portlet__body--fit">
+
+											<form class="kt-form kt-form--label-right">
+												
 												<div class="kt-portlet__body">
-													
-													
-													<div class="form-group row">
-														
-														<label class="col-form-label col-lg-2 col-sm-12">Empresa</label>
-														
-														<div class="col-lg-3 col-md-9 col-sm-12">
+
+													<div class="form-group row" style="padding: 0px; margin: 0px;">
+														<h5 style="padding: 0px;margin: 0px;">Objetivo</h5>
+													</div>
+
+													<div class="form-group row" style="margin-bottom: 10px;">
+
+														<div class="col-lg-2">
+															<label>Concepto:</label>
 															<select class="form-control m-select2" id="kt_select2_4" name="param">
 																<option></option>
-																<option value="e1">Empresa 1</option>
-																<option value="e2">Empresa 2</option>
+																<option value="e1">Seleccione...</option>
+																<option value="e2">Anticipo de caja chica</option>
 															</select>
-
 														</div>
 
-														<label class="col-form-label col-lg-1 col-sm-12">ID Solicitud</label>
-														<div class="col-lg-2 col-md-9 col-sm-12">
-															<input type="text" name="providerName" class="form-control" placeholder="" value="Nueva" disabled="true">
+
+														<div class="col-lg-4">
+															<label>Descripción:</label>
+															<input type="text" class="form-control" placeholder="" value="">
 														</div>
+
+														<div class="col-lg-2">
+															<label>Ubicación:</label>
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Seleccione...</option>
+																<option value="e2">Ciudad de México</option>
+																<option value="e3">Monterrey</option>
+															</select>
+														</div>
+
+														<div class="col-lg-2">
+															<label>Llenar desde ID Solicitud:</label>
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Seleccione...</option>
+																<option value="e2">0001</option>
+																<option value="e3">0002</option>
+															</select>
+														</div>
+
+														<div class="col-lg-2">
+															<label>Fecha Contable:</label>
+															<input type="text" class="form-control" placeholder="" value="" id="kt_datepicker_1">
+														</div>
+
 													</div>
 
 													<div class="form-group row">
-														<label class="col-form-label col-lg-2 col-sm-12">ID Empleado</label>
-														<div class="col-lg-3 col-md-9 col-sm-12">
-															<select class="form-control kt-selectpicker">
-																<option>Seleccione...</option>
-																<option>Empleado 1</option>
-																<option>Empleado 2</option>
-															</select>
-														</div>
+																<label class="col-form-label col-lg-1 col-sm-12">Sin solicitud</label>
+																<div class="col-lg-1 col-md-9 col-sm-12" style="margin-top: 10px;">
+																		<input type="checkbox" id="t">
+																	
+																</div>
+															</div>
+
+													<ul class="nav nav-tabs" role="tablist">
+														
+														<li class="nav-item">
+															<a class="nav-link active" data-toggle="tab" href="#" data-target="#contenido-tab">Gastos</a>
+														</li>
+
+														<li class="nav-item">
+															<a class="nav-link" data-toggle="tab" href="#" data-target="#detalle-tab">Detalle contable</a>
+														</li>
+
+														<li class="nav-item">
+															<a class="nav-link" data-toggle="tab" href="#" data-target="#factura-tab">Detalle factura</a>
+														</li>
+
+														<li class="nav-item">
+															<a class="nav-link" data-toggle="tab" href="#" data-target="#validacion-tab">Validación XML</a>
+														</li>
+
+														<li class="nav-item">
+															<a class="nav-link" data-toggle="tab" href="#" data-target="#aprobacion-tab">Aprobación</a>
+														</li>
+														
+														
+													</ul>
+													<div class="tab-content">
+														
+														<div class="tab-pane active" id="contenido-tab" role="tabpanel">
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+																<h5 style="padding: 0px;margin: 0px;">Detalle de Gastos</h5>
+															</div>
+
+															<!--begin: Datatable -->
+															<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_2">
+																<thead>
+																	<tr>
+																		<th>#</th>
+																		<th>Tipo de gasto</th>
+																		<th>Descripción de gasto </th>
+																		<th>Tipo Factura</th>
+																		<th>Fecha</th>
+																		<th>Tipo de Pago</th>
+																		<th>Importe</th>								
+																		<th>Moneda</th>
+																		<th></th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>
+																			1
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Gasolina</option>
+																				<option value="2">Hospedaje</option>
+																				<option value="3">Limpieza</option>
+																				<option value="4">Basura</option>
+																			</select>
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 250px;">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 120px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Deducible</option>
+																				<option value="2">No deducible</option>
+																			</select>
+																		</td>
+
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;" id="kt_datepicker_1">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 100px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Efectivo</option>
+																				<option value="2">TDC</option>
+																				<option value="3">TDD</option>
+																			</select>
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 120px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">MXN</option>
+																				<option value="2">USD</option>
+																			</select>
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;">
+																		</td>
+																	</tr>
+
+																	<tr>
+																		<td>
+																			2
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Gasolina</option>
+																				<option value="2">Hospedaje</option>
+																				<option value="3">Limpieza</option>
+																				<option value="4">Basura</option>
+																			</select>
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 250px;">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 120px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Deducible</option>
+																				<option value="2">No deducible</option>
+																			</select>
+																		</td>
+
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;" id="kt_datepicker_1">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 100px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Efectivo</option>
+																				<option value="2">TDC</option>
+																				<option value="3">TDD</option>
+																			</select>
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;">
+																		</td>
+
+																		<td>
+																			<select class="form-control" name="param" style="width: 120px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">MXN</option>
+																				<option value="2">USD</option>
+																			</select>
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="" style="width: 100px;">
+																		</td>
+																	</tr>
+
+																	
+																</tbody>
+															</table>
+
+															<div class="row" style="margin-top: 5px;">
+																<div class="col-lg-8"></div>	
+																<div class="col-lg-2">
+																	<label>Total:</label>
+																	<input type="text" class="form-control" placeholder="" value="">
+																</div>
+																<div class="col-lg-2">
+																	<label>Moneda:</label>
+																	<input type="text" class="form-control" placeholder="" value="">
+																</div>
+															</div>
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+														<h5 style="padding: 0px;margin: 0px; margin-bottom: 10px;">Aplicar anticipo</h5>
 													</div>
 
 													<div class="form-group row">
-														<label class="col-form-label col-lg-2 col-sm-12">Fecha Inicial</label>
+														<label class="col-form-label col-lg-2 col-sm-12">Aplicar monto</label>
 														<div class="col-lg-3 col-md-9 col-sm-12">
-															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
+															<input type="text" class="form-control" placeholder="" value="">
 														</div>
-														<label class="col-form-label col-lg-1 col-sm-12">Fecha Final</label>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empleado</label>
 														<div class="col-lg-3 col-md-9 col-sm-12">
-															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empresa</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+													
+													
+														</div>
+
+														<div class="tab-pane active" id="detalle-tab" role="tabpanel">
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+																<h5 style="padding: 0px;margin: 0px;">Detalle de Gastos</h5>
+															</div>
+
+															<!--begin: Datatable -->
+															<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_6">
+																<thead>
+																	<tr>
+																		<th>#</th>
+																		<th>Tipo de gasto</th>
+																		<th>Descripción de gasto </th>
+																		<th>Cuenta</th>
+																		<th>Departamento</th>
+																		<th>Un Op</th>
+																		<th>Producto</th>
+																		<th>Proyecto</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>
+																			1
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;" disabled="true">
+																				<option value="1">Gasolina</option>
+																				<option value="2">Hospedaje</option>
+																				<option value="3">Limpieza</option>
+																				<option value="4">Basura</option>
+																			</select>
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="Descripción de gasto" style="width: 200px;" disabled="true">
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="12345678" style="width: 100px;" disabled="true">
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Departamento 1</option>
+																				<option value="2">Departamento 2</option>
+																			</select>
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Valor 1</option>
+																				<option value="2">Valor 2</option>
+																			</select>
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Producto 1</option>
+																				<option value="2">Producto 2</option>
+																			</select>
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;">
+																				<option value="-1">Seleccione...</option>
+																				<option value="1">Proyecto 1</option>
+																				<option value="2">Proyecto 2</option>
+																			</select>
+																		</td>
+																		
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+														<h5 style="padding: 0px;margin: 0px; margin-bottom: 10px;">Aplicar anticipo</h5>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Aplicar monto</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empleado</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empresa</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+													
+													
+														</div>
+
+														<!-- tab de errores -->
+														<div class="tab-pane active" id="factura-tab" role="tabpanel">
+
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+																<h5 style="padding: 0px;margin: 0px;">Detalle de Gastos</h5>
+															</div>
+
+															<!--begin: Datatable -->
+															<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_7">
+																<thead>
+																	<tr>
+																		<th>#</th>
+																		<th>Tipo de gasto</th>
+																		<th>Descripción de gasto </th>
+																		<th>Proveedor</th>
+																		<th>Subtotal</th>
+																		<th>Iva</th>
+																		<th>Monto</th>
+																		<th>Moneda</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>
+																			1
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;" disabled="true">
+																				<option value="1">Gasolina</option>
+																				<option value="2">Hospedaje</option>
+																				<option value="3">Limpieza</option>
+																				<option value="4">Basura</option>
+																			</select>
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="Descripción de gasto" style="width: 200px;" disabled="true">
+																		</td>
+
+																		<td>
+																			<input type="text" class="form-control" value="Gasomex" style="width: 100px;" >
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="252.00" style="width: 100px;" >
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="48.00" style="width: 100px;" >
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="300.00" style="width: 100px;" >
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="MXN" style="width: 100px;" disabled="true">
+																		</td>
+																		
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="row" style="margin-top: 5px;">
+																<div class="col-lg-10"></div>	
+																
+																<div class="col-lg-2">
+																	<label>Total:</label>
+																	<input type="text" class="form-control" placeholder="" value="300.00" disabled="true">
+																</div>
+															</div>
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+														<h5 style="padding: 0px;margin: 0px; margin-bottom: 10px;">Aplicar anticipo</h5>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Aplicar monto</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empleado</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empresa</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+													
+													
+
+														</div>
+
+														<!--validacion xml-->
+														<div class="tab-pane active" id="validacion-tab" role="tabpanel">
+
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+																<h5 style="padding: 0px;margin: 0px;">Detalle de Gastos</h5>
+															</div>
+
+															<!--begin: Datatable -->
+															<table class="table table-striped- table-bordered table-hover table-checkable" id="kt_table_8">
+																<thead>
+																	<tr>
+																		<th>#</th>
+																		<th>Tipo de gasto</th>
+																		<th>Descripción de gasto </th>
+																		<th>Adjuntar PDF</th>
+																		<th>Con XML</th>
+																		<th>Adjuntar XML</th>
+																		<th>Validación</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>
+																			1
+																		</td>
+																		<td>
+																			<select class="form-control" name="param" style="width: 170px;" disabled="true">
+																				<option value="1">Gasolina</option>
+																				<option value="2">Hospedaje</option>
+																				<option value="3">Limpieza</option>
+																				<option value="4">Basura</option>
+																			</select>
+																		</td>
+																		<td>
+																			<input type="text" class="form-control" value="Descripción de gasto" style="width: 200px;" disabled="true">
+																		</td>
+
+																		<td>
+																			<div class="custom-file" style="width: 300px;">
+																				<input type="file" class="custom-file-input" id="customFile">
+																				<label class="custom-file-label" for="customFile" style="width:300px;">Seleccionar archivo...</label>
+																			</div>
+																		</td>
+																		<td>
+																			<input type="checkbox" class="form-control" style="display:inline-block;width: 20px;padding-left: 50px;">
+																		</td>
+																		<td>
+																			<div class="custom-file" style="width: 300px;">
+																				<input type="file" class="custom-file-input" id="customFile">
+																				<label class="custom-file-label" for="customFile" style="width:300px;">Seleccionar archivo...</label>
+																			</div>
+																		</td>
+																		<td>
+																			<button style="width: 100%;" type="submit" id="enviar" class="btn btn-success">Enviar</button>
+																		</td>
+																		
+																	</tr>
+																</tbody>
+															</table>
+
+															<div class="row" style="margin-top: 5px;">
+																<div class="col-lg-10"></div>	
+																
+																<div class="col-lg-2">
+																	<label>Total:</label>
+																	<input type="text" class="form-control" placeholder="" value="300.00" disabled="true">
+																</div>
+															</div>
+
+															<div class="form-group row" style="padding: 5px 0px; margin: 0px;">
+														<h5 style="padding: 0px;margin: 0px; margin-bottom: 10px;">Aplicar anticipo</h5>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Aplicar monto</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empleado</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Deuda a empresa</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control" placeholder="" value="">
+														</div>
+														<label class="col-form-label col-lg-1 col-sm-12" style="text-align: left;">MXN</label>
+													</div>
+													
+													
+
+														</div>
+
+														<!-- tab de aprobacion -->
+														<div class="tab-pane" id="aprobacion-tab" role="tabpanel">
+														
+															<div class="row">
+																<div class="col-lg-12">
+																	<table class="kt-datatable" id="tabla4" width="100%" style="min-height:50px!Important;">
+																		<thead>
+																			<tr>
+																				<th title="idarticulo">Nivel</th>
+																				<th title="descarticulo">Aprobador</th>
+																				<th title="um">Puesto</th>
+																				<th title="Field #4">Fecha Envío</th>
+																				<th title="Field #5">Estatus</th>
+																				<th title="Field #6">Fecha de aprobación</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td><p>1</p></td>
+																				<td><p>Sandra Duran Linares</p></td>
+																				<td><p>Jefe de compras corp</p></td>
+																				<td><p>04/04/2019</p></td>
+																				<td><p>Aprobado</p></td>
+																				<td><p>04/04/2019</p></td>
+																			</tr>
+																			<tr>
+																				<td><p>1</p></td>
+																				<td><p>José Gonzalez Hernandez</p></td>
+																				<td><p>Jefe de compras corp</p></td>
+																				<td><p>04/04/2019</p></td>
+																				<td><p>Rechazado</p></td>
+																				<td><p>04/04/2019</p></td>
+																			</tr>
+																			<tr>
+																				<td><p>3</p></td>
+																				<td><p>Yair Hernandez</p></td>
+																				<td><p>Director de Compras</p></td>
+																				<td><p></p></td>
+																				<td><p>No enviado</p></td>
+																				<td><p></p></td>
+																			</tr>
+																			<tr>
+																				<td><p>2</p></td>
+																				<td><p>Almicar Hernandez</p></td>
+																				<td><p>Gerente General</p></td>
+																				<td><p>04/04/2019</p></td>
+																				<td><p>Pendiente</p></td>
+																				<td><p></p></td>
+																			</tr>
+																			<tr>
+																				<td><p>2</p></td>
+																				<td><p>Monica Campos de Lira</p></td>
+																				<td><p>Gerente General</p></td>
+																				<td><p>04/04/2019</p></td>
+																				<td><p>Devuelto</p></td>
+																				<td><p></p></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+
+															
+														
+														</div>
+
+														<!-- tab de documentos relacionados -->
+														<div class="tab-pane" id="doc-tab" role="tabpanel" style="padding: 10px;margin-bottom: 10px;">
+														
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="row">
+																		<h5 style="margin-bottom: 15px;">Comprobante</h5>	
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-12"><h6>ID Comprobante:</h6></div>
+																		<div class="col-lg-12"><h6>Factura:</h6></div>
+																		<div class="col-lg-12"><h6>Estado de Comprobante:</h6></div>
+																	</div>
+
+																	<div class="row" style="margin-top: 20px;">
+																		<h5 style="margin-bottom: 15px;">Activos Fijos</h5>	
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-12"><h6>ID Activo:</h6></div>
+																		<div class="col-lg-12"><h6>Fecha Creación:</h6></div>
+																	</div>
+
+																	<div class="row" style="margin-top: 20px;">
+																		<h5 style="margin-bottom: 15px;">Facturación</h5>	
+																	</div>
+																	<div class="row">
+																		<div class="col-lg-12"><h6>ID Factura:</h6></div>
+																		<div class="col-lg-12"><h6>Fecha Creación:</h6></div>
+																		<div class="col-lg-12"><h6>Estado de Factura:</h6></div>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+													
+													<div class="form-group row" style="padding-top: 20px;">
+														<div class="col-lg-3">
+															<button style="width: 100%; margin-bottom: 20px;" type="submit" id="createOrderButton" class="btn btn-success">Guardar</button>
+														</div>
+														<div class="col-lg-6"></div>
+														<div class="col-lg-3">
+															<button style="width: 100%; margin-bottom: 20px;" type="submit" id="createOrderButton" class="btn btn-success">Envío a aprobación</button>
 														</div>
 													</div>
 
@@ -1309,15 +1956,9 @@ Em<!DOCTYPE html>
 										</div>
 
 										<!--footer-->
-										<div class="kt-portlet__foot">
-											<div class="row align-items-center">
-												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createOrderButton"
-													class="btn btn-success">Crear</button>
-												</div>
-											</div>
-										</div>
+										
 									</div>
+
 								</div>
 								
 							</div>
@@ -1757,12 +2398,7 @@ Em<!DOCTYPE html>
 		<!-- end::Scrolltop -->
 
 		<!-- begin::Sticky Toolbar -->
-		<ul class="kt-sticky-toolbar" style="margin-top: 30px;">
-			
-			<li class="kt-sticky-toolbar__item kt-sticky-toolbar__item--warning" data-toggle="kt-tooltip" title="Documentación" data-placement="left">
-				<a href="https://keenthemes.com/metronic/?page=docs" target="_blank"><i class="flaticon2-telegram-logo"></i></a>
-			</li>
-		</ul>
+		
 
 		<!-- end::Sticky Toolbar -->
 
@@ -2047,26 +2683,31 @@ Em<!DOCTYPE html>
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
 		<script src="assets/app/custom/general/crud/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
-
+		<script src="assets/app/custom/general/crud/metronic-datatable/base/html-table.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
+
+		<script src="assets/vendors/custom/datatables/datatables.bundle.js" type="text/javascript"></script>
+		<script src="assets/app/custom/general/crud/datatables/basic/scrollable.js" type="text/javascript"></script>
+
 
 		<!--begin::Global App Bundle(used by all pages) -->
 		<script src="assets/app/bundle/app.bundle.js" type="text/javascript"></script>
 
-				
-		<script src="assets/app/custom/general/crud/forms/widgets/select2.js" type="text/javascript"></script>
 		<!--end::Global App Bundle -->
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+
+				$("#detalle-tab").removeClass("active");
+				$("#factura-tab").removeClass("active");
+				$("#validacion-tab").removeClass("active");
+
 				$("#createOrderButton").click(function(e){
-					window.location.href = "solicitudGastos2.html";
+					alert("click al boton");
 				});
 			});
 		</script>
 	</body>
-
-	
 
 	<!-- end::Body -->
 </html>

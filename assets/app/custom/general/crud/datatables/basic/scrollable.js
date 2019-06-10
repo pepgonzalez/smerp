@@ -145,6 +145,57 @@ var KTDatatablesBasicScrollable = function() {
 		});
 	};
 
+	var initTable6 = function() {
+		var table = $('#kt_table_6');
+
+		// begin second table
+		table.DataTable({
+			paging: false,
+			searching: false,
+			scrollY: '50vh',
+			scrollX: true,
+			scrollCollapse: true,
+			info: false,
+			columnDefs: [
+				{
+				}],
+		});
+	};
+
+	var initTable7 = function() {
+		var table = $('#kt_table_7');
+
+		// begin second table
+		table.DataTable({
+			paging: false,
+			searching: false,
+			scrollY: '50vh',
+			scrollX: true,
+			scrollCollapse: true,
+			info: false,
+			columnDefs: [
+				{
+				}],
+		});
+	};
+
+	var initTable8 = function() {
+		var table = $('#kt_table_8');
+
+		// begin second table
+		table.DataTable({
+			paging: false,
+			searching: false,
+			scrollY: '50vh',
+			scrollX: true,
+			scrollCollapse: true,
+			info: false,
+			columnDefs: [
+				{
+				}],
+		});
+	};
+
 	return {
 
 		//main function to initiate the module
@@ -153,6 +204,9 @@ var KTDatatablesBasicScrollable = function() {
 			initTable2();
 			initTable4();
 			initTable5();
+			initTable6();
+			initTable7();
+			initTable8();
 		},
 
 	};
