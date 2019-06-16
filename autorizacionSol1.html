@@ -395,7 +395,7 @@ Em<!DOCTYPE html>
 
 									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
 										<a href="#" class="kt-menu__link ">
-											<span class="kt-menu__link-text">Gastos > Solicitud > Buscar solicitud</span>
+											<span class="kt-menu__link-text">Viáticos y caja chica > Solicitud > Buscar solicitud</span>
 										</a>
 									</li>
 
@@ -1362,7 +1362,12 @@ Em<!DOCTYPE html>
 													<div class="form-group row">
 														<label class="col-form-label col-lg-2 col-sm-12">Fecha Inicial</label>
 														<div class="col-lg-3 col-md-9 col-sm-12">
-															<input type="text" class="form-control" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
+															<input type="text" class="form-control fechaInicial" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
+														</div>
+
+														<label class="col-form-label col-lg-2 col-sm-12">Fecha Final</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control fechaFinal" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
 														</div>
 														
 													</div>
@@ -2123,8 +2128,11 @@ Em<!DOCTYPE html>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+
 				$("#createOrderButton").click(function(e){
-					window.location.href = "autorizacionSol2.html";
+					var fechaInicial = $(".fechaInicial").val();
+					var fechaFinal = $(".fechaFinal").val();
+					window.location.href = "autorizacionSol2.html?fechainicial="+fechaInicial+"&fechafinal="+fechaFinal;
 				});
 			});
 		</script>

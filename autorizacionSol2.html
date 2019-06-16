@@ -395,7 +395,7 @@
 
 									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
 										<a href="#" class="kt-menu__link ">
-											<span class="kt-menu__link-text">Gastos > Solicitud > Buscar Solicitud</span>
+											<span class="kt-menu__link-text">Viáticos y caja chica > Solicitud > Buscar Solicitud</span>
 										</a>
 									</li>
 
@@ -1293,11 +1293,11 @@
 														</div>
 														<div class="col-lg-2">
 															<label>Fecha Inicial:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="10/04/2019" disabled="true">
+															<input type="email" class="form-control fechaInicial" placeholder="Enter full name" value="" disabled="true">
 														</div>
 														<div class="col-lg-2">
 															<label>Fecha Final:</label>
-															<input type="email" class="form-control" placeholder="Enter full name" value="10/04/2019" disabled="true">
+															<input type="email" class="form-control fechaFinal" placeholder="Enter full name" value="" disabled="true">
 														</div>
 														<div class="col-lg-2">
 															<label>Empleado:</label>
@@ -2558,7 +2558,31 @@
 		<!--end::Global App Bundle -->
 
 		<script type="text/javascript">
+
+			function getParameterByName( name ) //courtesy Artem
+			{
+			  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			  var regexS = "[\\?&]"+name+"=([^&#]*)";
+			  var regex = new RegExp( regexS );
+			  var results = regex.exec( window.location.href );
+			  if( results == null )
+			    return "";
+			  else
+			  {
+			    if ((results[1].indexOf('?'))>0)
+			        return decodeURIComponent(results[1].substring(0,results[1].indexOf('?')).replace(/\+/g, " "));
+			    else
+			        return decodeURIComponent(results[1].replace(/\+/g, " "));
+			  }
+			}
+
 			$(document).ready(function(){
+
+				var fechainicial = getParameterByName("fechainicial");
+				var fechafinal = getParameterByName("fechafinal");
+				$(".fechaInicial").val(fechainicial);
+				$(".fechaFinal").val(fechafinal);
+
 				$("#createOrderButton").click(function(e){
 					alert("click al boton");
 				});
