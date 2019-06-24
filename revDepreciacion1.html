@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+Em<!DOCTYPE html>
 <html lang="es">
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | Pagos</title>
+		<title>SMART ERP | Activo Fijo</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -455,7 +455,12 @@
 										</div>
 									</li>
 
-									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true"><a href="#" class="kt-menu__link "><span class="kt-menu__link-text">Cuentas por pagar > Procesos Masivos > Contabilización de Pagos</span></a></li>
+									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
+										<a href="#" class="kt-menu__link ">
+											<span class="kt-menu__link-text">Activo Fijo > Depreciación > Revisión de depreciación</span>
+										</a>
+									</li>
+
 									<!--
 									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i></a>
 										
@@ -1319,7 +1324,6 @@
 
 						<!-- begin:: Subheader -->
 						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
-							
 						</div>
 
 						<!-- end:: Subheader -->
@@ -1343,7 +1347,7 @@
 											
 											<div class="kt-portlet__head-label">
 												<h3 class="kt-portlet__head-title">
-													Nuevo Proceso de Contabilización de Pagos
+													Revisión de procesos de depreciación
 												</h3>
 											</div>
 											
@@ -1380,24 +1384,56 @@
 											<form class="kt-form kt-form--label-right">
 												<div class="kt-portlet__body">
 													
-													
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">ID Proceso:</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
+														<label class="col-form-label col-lg-2 col-sm-12">Empresa</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<select class="form-control m-select2" id="kt_select2_4" name="param">
+																<option></option>
+																<option value="e1">Empresa 1</option>
+																<option value="e2">Empresa 2</option>
+															</select>
+														</div>
+													</div>
+													
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">ID Activo</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
 															<select class="form-control kt-selectpicker">
 																<option>Seleccione...</option>
-																<option>PAGOS_SMART</option>
-																<option>Proceso de Contabilización de Pagos 2</option>
+																<option>Activo 1</option>
+																<option>Activo 2</option>
 															</select>
 														</div>
 													</div>
 
+
 													<div class="form-group row">
-														<label class="col-form-label col-lg-3 col-sm-12">Descripción:</label>
-														<div class="col-lg-4 col-md-9 col-sm-12">
-															<input type="text" name="providerName" class="form-control" placeholder="">
+														<label class="col-form-label col-lg-2 col-sm-12">Fecha contable</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control fecha" id="kt_datepicker_1" readonly="" placeholder="Seleccione Fecha...">
 														</div>
 													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Descripción</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<input type="text" class="form-control fecha" id="" readonly="" placeholder="">
+														</div>
+													</div>
+
+													<div class="form-group row">
+														<label class="col-form-label col-lg-2 col-sm-12">Estado</label>
+														<div class="col-lg-3 col-md-9 col-sm-12">
+															<select class="form-control kt-selectpicker">
+																<option>Seleccione...</option>
+																<option>Activo</option>
+																<option>Pendiente</option>
+															</select>
+														</div>
+													</div>
+													
+
 
 												</div>
 											</form>
@@ -1408,8 +1444,8 @@
 										<div class="kt-portlet__foot">
 											<div class="row align-items-center">
 												<div class="col-lg-12 kt-align-left">
-													<button type="submit" id="createProcessButton"
-													class="btn btn-success">Crear Proceso</button>
+													<button type="submit" id="createOrderButton"
+													class="btn btn-success">Buscar</button>
 												</div>
 											</div>
 										</div>
@@ -2142,6 +2178,7 @@
 
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
+		<script src="assets/app/custom/general/crud/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
 
 		<!--end::Page Scripts -->
 
@@ -2153,9 +2190,12 @@
 		<!--end::Global App Bundle -->
 
 		<script type="text/javascript">
+
+			
+
 			$(document).ready(function(){
-				$("#createProcessButton").click(function(e){
-					window.location.href = "contabilizacionPagos2.html";
+				$("#createOrderButton").click(function(e){
+					window.location.href = "revDepreciacion2.html";
 				});
 			});
 		</script>

@@ -319,7 +319,69 @@
 													</div>
 												</li>
 
-												<li class="kt-menu__item " aria-haspopup="true"><a href="#" class="kt-menu__link "><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Activo Fijo</span></a></li>
+												<li class="kt-menu__item  kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Activo Fijo</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+													<!-- submenu -->
+													<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+														<ul class="kt-menu__subnav">
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Alta de activos</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="altaActivoRecepcion1.html" class="kt-menu__link "><span class="kt-menu__link-text">Alta de activo por recepción</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="altaActivoLinea1.html" class="kt-menu__link "><span class="kt-menu__link-text">Alta de activo en linea</span></a></li>			
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="altaArrendamiento1.html" class="kt-menu__link "><span class="kt-menu__link-text">Arrendamiento de activos</span></a></li>
+
+																		
+																	</ul>
+																</div>
+															</li>
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Entradas contables</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="procesoEntradaCont1.html" class="kt-menu__link "><span class="kt-menu__link-text">Proceso de generación de entradas contables</span></a></li>
+
+																		
+																	</ul>
+																</div>
+															</li>
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Transacciones financieras</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="transacciones1.html" class="kt-menu__link "><span class="kt-menu__link-text">Transacciones financieras</span></a></li>
+
+																		
+																	</ul>
+																</div>
+															</li>
+
+															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Depreciación</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
+
+																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
+																	<ul class="kt-menu__subnav">
+	
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="depreciacion1.html" class="kt-menu__link "><span class="kt-menu__link-text">Proceso depreciación</span></a></li>
+
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="revDepreciacion1.html" class="kt-menu__link "><span class="kt-menu__link-text">Revisión de depreciación</span></a></li>
+
+																		
+																	</ul>
+																</div>
+															</li>
+
+														</ul>
+													</div>
+												</li>
 
 												<li class="kt-menu__item  kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Viaticos y caja chica</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
 
@@ -1292,7 +1354,7 @@
 															<input type="email" class="form-control" placeholder="Enter full name" value="Empresa 1" disabled="true">
 														</div>
 														<div class="col-lg-3">
-															<label>Fecha:</label>
+															<label>Fecha contable:</label>
 															<input type="email" class="form-control fecha" placeholder="Enter full name" value="" disabled="true">
 														</div>
 														<div class="col-lg-3">
@@ -1503,7 +1565,7 @@
 																		<div class="form-group row">
 																			<label for="example-text-input" class="col-2 col-form-label">Fecha efectiva</label>
 																			<div class="col-3">
-																				<input class="form-control" type="text" value="" id="example-text-input">
+																				<input class="form-control" type="text" value="" id="kt_datepicker_1">
 																			</div>
 																			<label for="example-text-input" class="col-2 col-form-label">Número</label>
 																			<div class="col-3">
@@ -1601,36 +1663,38 @@
 														</div>
 
 														<div class="tab-pane" id="procesos-tab" role="tabpanel">
-															<div class="form-group row">
-																<label for="example-text-input" class="col-1 col-form-label">Departamento</label>
-																<div class="col-2">
+															
+															<div class="form-group row" style="margin-bottom: 0px;">
+																<div class="col-lg-3">
+																	<label>Departamento:</label>
 																	<select class="form-control m-select2" id="kt_select2_4" name="param">
 																		<option value="e1">Departamento 1</option>
 																		<option value="e2">Departamento 2</option>
 																	</select>
 																</div>
-																<label for="example-text-input" class="col-1 col-form-label">Proyecto</label>
-																<div class="col-2">
+																<div class="col-lg-3">
+																	<label>Proyecto:</label>
 																	<select class="form-control m-select2" id="kt_select2_4" name="param">
 																		<option value="e1">Proyecto 1</option>
 																		<option value="e2">Proyecto 2</option>
 																	</select>
 																</div>
-																<label for="example-text-input" class="col-1 col-form-label">Unidad operativa</label>
-																<div class="col-2">
+																<div class="col-lg-3">
+																	<label>Unidad operativa:</label>
 																	<select class="form-control m-select2" id="kt_select2_4" name="param">
 																		<option value="e1">Unidad 1</option>
 																		<option value="e2">Unidad 2</option>
 																	</select>
 																</div>
-																<label for="example-text-input" class="col-1 col-form-label">Producto</label>
-																<div class="col-2">
+																<div class="col-lg-3">
+																	<label>Producto:</label>
 																	<select class="form-control m-select2" id="kt_select2_4" name="param">
 																		<option value="e1">Producto 1</option>
 																		<option value="e2">Producto 2</option>
 																	</select>
-																</div>
+																</div>	
 															</div>
+															
 															<div class="row" style="margin-top: 30px; border-top: 1px solid #ebedf2; padding-top: 10px;">
 																<h5 style="margin-bottom: 15px;">Comentarios</h5>
 																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
