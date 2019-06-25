@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title>SMART ERP | Inicio</title>
+		<title>SMART ERP | Catálogo de moneda</title>
 		<meta name="description" content="Sistema de control smart erp">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -143,8 +143,6 @@
 				<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
 
 					<!-- begin:: Header -->
-					<link href="snipets/menu.html" rel="import" />
-
 					<div id="kt_header" class="kt-header kt-grid kt-grid--ver  kt-header--fixed ">
 
 						<!-- begin: Header Menu -->
@@ -173,9 +171,9 @@
 
 																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
 																	<ul class="kt-menu__subnav">
-	
-																		<li class="kt-menu__item " aria-haspopup="true"><a href="introduccionPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Introducción de Pólizas</span></a></li>
 
+																		<li class="kt-menu__item " aria-haspopup="true"><a href="introduccionPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Introducción de Pólizas</span></a></li>
+	
 																		<li class="kt-menu__item " aria-haspopup="true"><a href="polizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Carga de Pólizas</span></a></li>
 
 																		<li class="kt-menu__item " aria-haspopup="true"><a href="generadorPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Generador de Pólizas</span></a></li>
@@ -187,39 +185,6 @@
 																		<li class="kt-menu__item " aria-haspopup="true"><a href="buscarPoliza.html" class="kt-menu__link "><span class="kt-menu__link-text">Búsqueda de Pólizas</span></a></li>
 
 																		<li class="kt-menu__item " aria-haspopup="true"><a href="procesoPolizas1.html" class="kt-menu__link "><span class="kt-menu__link-text">Contabilización de Pólizas</span></a></li>
-																	</ul>
-																</div>
-															</li>
-														</ul>
-													</div>
-												</li>
-
-												<li class="kt-menu__item  kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class="kt-menu__link-bullet kt-menu__link-bullet--dot"><span></span></i><span class="kt-menu__link-text">Configuración</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
-
-													<!-- submenu -->
-													<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
-														<ul class="kt-menu__subnav">
-
-															<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">General</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
-
-																<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
-																	<ul class="kt-menu__subnav">
-	
-																		<li class="kt-menu__item kt-menu__item--submenu" data-ktmenu-submenu-toggle="hover" aria-haspopup="true"><a href="#" class="kt-menu__link kt-menu__toggle"><i class=""><span></span></i><span class="kt-menu__link-text">Catálogos</span><i class="kt-menu__hor-arrow la la-angle-right"></i></a>
-
-																			<div class="kt-menu__submenu kt-menu__submenu--classic kt-menu__submenu--right">
-																				<ul class="kt-menu__subnav">
-
-																					<li class="kt-menu__item " aria-haspopup="true"><a href="catPais1.html" class="kt-menu__link "><span class="kt-menu__link-text">Pais</span></a></li>
-
-																					<li class="kt-menu__item " aria-haspopup="true"><a href="catMoneda1.html" class="kt-menu__link "><span class="kt-menu__link-text">Moneda</span></a></li>
-				
-																					<li class="kt-menu__item " aria-haspopup="true"><a href="catEmpresa1.html" class="kt-menu__link "><span class="kt-menu__link-text">Empresa</span></a></li>
-
-																				</ul>
-																			</div>
-																		</li>
-
 																	</ul>
 																</div>
 															</li>
@@ -492,6 +457,12 @@
 										</div>
 									</li>
 
+									<li class="kt-menu__item  kt-menu__item--active " aria-haspopup="true">
+										<a href="#" class="kt-menu__link ">
+											<span class="kt-menu__link-text">Configuración > General > Catálogos > Moneda</span>
+										</a>
+									</li>
+
 									<!--
 									<li class="kt-menu__item  kt-menu__item--submenu kt-menu__item--rel" data-ktmenu-submenu-toggle="click" aria-haspopup="true"><a href="javascript:;" class="kt-menu__link kt-menu__toggle"><span class="kt-menu__link-text">Reports</span><i class="kt-menu__hor-arrow la la-angle-down"></i></a>
 										
@@ -610,80 +581,387 @@
 							<!--end: Search -->
 
 							<!--begin: Notifications -->
-							
+							<!--
 							<div class="kt-header__topbar-item dropdown">
-
 								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
-									
-									<span class="kt-header__topbar-icon kt-header__topbar-icon--success">
-										<i class="flaticon2-bell-alarm-symbol"></i>
-										<!--
-										<span class="kt-menu__link-badge">
-												<span class="kt-badge kt-badge--brand kt-badge--rounded">2</span>
-										</span>
-											-->
-									</span>
-									
+									<span class="kt-header__topbar-icon kt-header__topbar-icon--success"><i class="flaticon2-bell-alarm-symbol"></i></span>
 									<span class="kt-hidden kt-badge kt-badge--danger"></span>
-
-									
-									
-									
-
 								</div>
-								
 								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 									<form>
 
-										<!--begin: Head -->
 										<div class="kt-head kt-head--skin-light kt-head--fit-x kt-head--fit-b">
 											<h3 class="kt-head__title">
-												Notificaciones
+												User Notifications
 												&nbsp;
-												<!--
 												<span class="btn btn-label-primary btn-sm btn-bold btn-font-md">23 new</span>
-												-->
 											</h3>
 											<ul class="nav nav-tabs nav-tabs-line nav-tabs-bold nav-tabs-line-3x nav-tabs-line-brand  kt-notification-item-padding-x" role="tablist">
-
 												<li class="nav-item">
-													<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Nuevas</a>
+													<a class="nav-link active show" data-toggle="tab" href="#topbar_notifications_notifications" role="tab" aria-selected="true">Alerts</a>
 												</li>
-												
 												<li class="nav-item">
-													<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Todas</a>
+													<a class="nav-link" data-toggle="tab" href="#topbar_notifications_events" role="tab" aria-selected="false">Events</a>
 												</li>
-
+												<li class="nav-item">
+													<a class="nav-link" data-toggle="tab" href="#topbar_notifications_logs" role="tab" aria-selected="false">Logs</a>
+													</li>
 											</ul>
 										</div>
 
-										<!--end: Head -->
 										<div class="tab-content">
-											
-											<div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+											<div class="tab-pane active show" id="topbar_notifications_notifications" role="tabpanel">
 												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
-													
-													<a href="compras2.html" class="kt-notification__item">
+													<a href="#" class="kt-notification__item">
 														<div class="kt-notification__item-icon">
-															<i class="flaticon-doc kt-font-success"></i>
+															<i class="flaticon2-line-chart kt-font-success"></i>
 														</div>
 														<div class="kt-notification__item-details">
 															<div class="kt-notification__item-title">
-																La orden de Compra 00000001 ha sido aprobada
+																New order has been received
 															</div>
 															<div class="kt-notification__item-time">
-																hace 23 hrs
+																2 hrs ago
 															</div>
 														</div>
 													</a>
-
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-box-1 kt-font-brand"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer is registered
+															</div>
+															<div class="kt-notification__item-time">
+																3 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-chart2 kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Application has been approved
+															</div>
+															<div class="kt-notification__item-time">
+																3 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-image-file kt-font-warning"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New file has been uploaded
+															</div>
+															<div class="kt-notification__item-time">
+																5 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-bar-chart kt-font-info"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New user feedback received
+															</div>
+															<div class="kt-notification__item-time">
+																8 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-pie-chart-2 kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																System reboot has been successfully completed
+															</div>
+															<div class="kt-notification__item-time">
+																12 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-favourite kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New order has been placed
+															</div>
+															<div class="kt-notification__item-time">
+																15 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item kt-notification__item--read">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-safe kt-font-primary"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Company meeting canceled
+															</div>
+															<div class="kt-notification__item-time">
+																19 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-psd kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New report has been received
+															</div>
+															<div class="kt-notification__item-time">
+																23 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-download-1 kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Finance report has been generated
+															</div>
+															<div class="kt-notification__item-time">
+																25 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-security kt-font-warning"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer comment recieved
+															</div>
+															<div class="kt-notification__item-time">
+																2 days ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-pie-chart kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer is registered
+															</div>
+															<div class="kt-notification__item-time">
+																3 days ago
+															</div>
+														</div>
+													</a>
 												</div>
 											</div>
-											<div class="tab-pane active" id="topbar_notifications_logs" role="tabpanel">
+											<div class="tab-pane" id="topbar_notifications_events" role="tabpanel">
+												<div class="kt-notification kt-margin-t-10 kt-margin-b-10 kt-scroll" data-scroll="true" data-height="300" data-mobile-height="200">
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-psd kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New report has been received
+															</div>
+															<div class="kt-notification__item-time">
+																23 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-download-1 kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Finance report has been generated
+															</div>
+															<div class="kt-notification__item-time">
+																25 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-line-chart kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New order has been received
+															</div>
+															<div class="kt-notification__item-time">
+																2 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-box-1 kt-font-brand"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer is registered
+															</div>
+															<div class="kt-notification__item-time">
+																3 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-chart2 kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Application has been approved
+															</div>
+															<div class="kt-notification__item-time">
+																3 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-image-file kt-font-warning"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New file has been uploaded
+															</div>
+															<div class="kt-notification__item-time">
+																5 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-bar-chart kt-font-info"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New user feedback received
+															</div>
+															<div class="kt-notification__item-time">
+																8 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-pie-chart-2 kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																System reboot has been successfully completed
+															</div>
+															<div class="kt-notification__item-time">
+																12 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-favourite kt-font-brand"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New order has been placed
+															</div>
+															<div class="kt-notification__item-time">
+																15 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item kt-notification__item--read">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-safe kt-font-primary"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Company meeting canceled
+															</div>
+															<div class="kt-notification__item-time">
+																19 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-psd kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New report has been received
+															</div>
+															<div class="kt-notification__item-time">
+																23 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-download-1 kt-font-danger"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																Finance report has been generated
+															</div>
+															<div class="kt-notification__item-time">
+																25 hrs ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon-security kt-font-warning"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer comment recieved
+															</div>
+															<div class="kt-notification__item-time">
+																2 days ago
+															</div>
+														</div>
+													</a>
+													<a href="#" class="kt-notification__item">
+														<div class="kt-notification__item-icon">
+															<i class="flaticon2-pie-chart kt-font-success"></i>
+														</div>
+														<div class="kt-notification__item-details">
+															<div class="kt-notification__item-title">
+																New customer is registered
+															</div>
+															<div class="kt-notification__item-time">
+																3 days ago
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="tab-pane" id="topbar_notifications_logs" role="tabpanel">
 												<div class="kt-grid kt-grid--ver" style="min-height: 200px;">
 													<div class="kt-grid kt-grid--hor kt-grid__item kt-grid__item--fluid kt-grid__item--middle">
 														<div class="kt-grid__item kt-grid__item--middle kt-align-center">
-															<br>No hay notificaciones nuevas.
+															All caught up!
+															<br>No new notifications.
 														</div>
 													</div>
 												</div>
@@ -692,23 +970,15 @@
 									</form>
 								</div>
 							</div>
-							
+							-->
 
 							<!--end: Notifications -->
 
 							<!--begin: Quick actions -->
 							<div class="kt-header__topbar-item dropdown">
-								
 								<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
 									<span class="kt-header__topbar-icon kt-header__topbar-icon--warning"><i class="flaticon2-gear"></i></span>
 								</div>
-
-								<!--
-								<span class="kt-menu__link-badge">
-									<span class="kt-badge kt-badge--brand kt-badge--rounded">2</span>
-								</span>
-								-->
-								
 								<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
 									<form>
 
@@ -1050,13 +1320,13 @@
 
 						<!-- end:: Header Topbar -->
 					</div>
+
 					<!-- end:: Header -->
-					
 					<div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor">
 
 						<!-- begin:: Subheader -->
-						<div class="kt-subheader   kt-grid__item" id="kt_subheader">
-
+						<div class="kt-subheader kt-grid__item" id="kt_subheader">
+							
 						</div>
 
 						<!-- end:: Subheader -->
@@ -1065,8 +1335,527 @@
 
 						<!-- begin:: Content -->
 						<div class="kt-content  kt-grid__item kt-grid__item--fluid" id="kt_content">
+
+							<!--Begin::Dashboard 7-->
+
+							<!--Begin::Section-->
+							<div class="row">
+								
+								<div class="col-xl-12">
+									
+									<div class="kt-portlet kt-portlet--mobile">
+
+										<!-- contenido -->
+										<div class="kt-portlet__body kt-portlet__body--fit">
+
+											<form class="kt-form kt-form--label-right">
+												<div class="kt-portlet__body" style="padding:10px;">
+													<div class="form-group row" style="margin-bottom: 0px;">
+														<div class="col-lg-4">
+															<label>Código de moneda:</label>
+															<input type="text" class="form-control" placeholder="" value="" disabled="true" id="empresa">
+														</div>
+														<div class="col-lg-4">
+															<label>Descripción:</label>
+															<input type="text" class="form-control fecha" placeholder="" value="" disabled="true" id="desc">
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<div class="kt-portlet kt-portlet--mobile">
+										
+										<!-- header -->
+										<div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--break-sm">
+											
+											<div class="kt-portlet__head-label">
+												<h3 class="kt-portlet__head-title">
+													Información General
+												</h3>
+											</div>
+										</div>
+
+										<!-- contenido -->
+										<div class="kt-portlet__body kt-portlet__body--fit">
+
+											<form class="kt-form kt-form--label-right">
+												
+												<div class="kt-portlet__body">
+
+													
+
+													<ul class="nav nav-tabs" role="tablist">
+														<li class="nav-item">
+															<a class="nav-link active" data-toggle="tab" href="#" data-target="#contenido-tab">Definición</a>
+														</li>
+														
+													</ul>
+													<div class="tab-content">
+														
+														<div class="tab-pane active" id="contenido-tab" role="tabpanel">
+															
+															<!-- datos de entrada -->
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Descripción corta</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Estado</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Activo</option>
+																		<option value="e2">Activo</option>
+																	</select>
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Fecha efectiva</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control" id="kt_datepicker_1" autocomplete="off">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Simbolo</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Decimales</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control" id="" autocomplete="off">
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Posición enteros</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control" id="" autocomplete="off">
+																</div>
+
+															</div>
+
+																										
+
+														</div>
+
+														<!-- tab 2 -->
+														<div class="tab-pane" id="registro-tab" role="tabpanel">
+															
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Tipo</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+																<label class="col-form-label col-lg-2 col-sm-12">Estado</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Activo</option>
+																		<option value="e2">Inactivo</option>
+																	</select>
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Ubicación</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Ubicación 1</option>
+																		<option value="e2">Ubicación 2</option>
+																	</select>
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Dirección 1</label>
+																
+																<div class="col-lg-8 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Dirección 2</label>
+																
+																<div class="col-lg-8 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Colonia</label>
+																
+																<div class="col-lg-8 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Ciudad</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Est/Prov/Reg</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Estado 1</option>
+																		<option value="e2">Estado 2</option>
+																	</select>
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Pais</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">México</option>
+																		<option value="e2">USD</option>
+																	</select>
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Código postal</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Prefijo</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Telefono</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+																<label class="col-form-label col-lg-1 col-sm-12">Extensión</label>
+																
+																<div class="col-lg-2 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+															<div class="form-group row" style="margin-bottom:10px;">
+														
+																<label class="col-form-label col-lg-2 col-sm-12">Correo electrónico</label>
+																
+																<div class="col-lg-3 col-md-9 col-sm-12">
+																	<input type="text" class="form-control">
+																</div>
+
+															</div>
+
+														</div>
+														<!-- tab de comentarios -->
+														<div class="tab-pane" id="comentarios-tab" role="tabpanel">
+
+															<div class="kt-portlet" data-ktportlet="true" id="kt_portlet_tools_1"
+																style="border: 1px solid #ebedf2;margin-bottom: 5px;">
+																<div class="kt-portlet__head">
+																	<div class="kt-portlet__head-label">
+																		<h3 class="kt-portlet__head-title">
+																			Ubicación
+																		</h3>
+																	</div>
+																	<div class="kt-portlet__head-toolbar">
+																		<div class="kt-portlet__head-group">
+																			<a href="#" data-ktportlet-tool="toggle" class="btn btn-sm btn-icon btn-clean btn-icon-md"><i class="la la-angle-down"></i></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="kt-portlet__body">
+																	<div class="kt-portlet__content">
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Fecha efectiva</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="kt_datepicker_1">
+																			</div>
+																			<label for="example-text-input" class="col-2 col-form-label">Número</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																		</div>
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Ubicación</label>
+																			<div class="col-3">
+																				<select class="form-control m-select2" id="kt_select2_4" name="param">
+																					<option value="e1">Ubicación 1</option>
+																					<option value="e2">Ubicación 2</option>
+																				</select>
+																			</div>
+																			<label for="example-text-input" class="col-2 col-form-label">Edificio</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																		</div>
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Calle</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																			<label for="example-text-input" class="col-2 col-form-label">Piso</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																		</div>
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Ciudad</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																			<label for="example-text-input" class="col-2 col-form-label">Código postal</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																		</div>
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Estado</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																			<label for="example-text-input" class="col-2 col-form-label">Pais</label>
+																			<div class="col-3">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="kt-portlet" data-ktportlet="true" id="kt_portlet_tools_1" style="border: 1px solid #ebedf2;margin-bottom: 5px;">
+																<div class="kt-portlet__head">
+																	<div class="kt-portlet__head-label">
+																		<h3 class="kt-portlet__head-title">
+																			Responsable
+																		</h3>
+																	</div>
+																	<div class="kt-portlet__head-toolbar">
+																		<div class="kt-portlet__head-group">
+																			<a href="#" data-ktportlet-tool="toggle" class="btn btn-sm btn-icon btn-clean btn-icon-md"><i class="la la-angle-down"></i></a>
+																		</div>
+																	</div>
+																</div>
+																<div class="kt-portlet__body">
+																	<div class="kt-portlet__content">
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">Responsable</label>
+																			<div class="col-5">
+																				<input class="form-control" type="text" value="" id="example-text-input">
+																			</div>
+																			
+																		</div>
+																		<div class="form-group row">
+																			<label for="example-text-input" class="col-2 col-form-label">ID Empleado</label>
+																			<div class="col-3">
+																				<select class="form-control m-select2" id="kt_select2_4" name="param">
+																					<option value="e1">Seleccione...</option>
+																					<option value="e1">Empleado 1</option>
+																					<option value="e2">Empleado 2</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														
+															<div class="row" style="margin: 0px 8px; padding-top: 10px;">
+																<h5 style="margin-bottom: 15px;">Comentarios</h5>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>		
+															
+														</div>
+
+														<div class="tab-pane" id="procesos-tab" role="tabpanel">
+															
+															<div class="form-group row" style="margin-bottom: 0px;">
+																<div class="col-lg-3">
+																	<label>Departamento:</label>
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Departamento 1</option>
+																		<option value="e2">Departamento 2</option>
+																	</select>
+																</div>
+																<div class="col-lg-3">
+																	<label>Proyecto:</label>
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Proyecto 1</option>
+																		<option value="e2">Proyecto 2</option>
+																	</select>
+																</div>
+																<div class="col-lg-3">
+																	<label>Unidad operativa:</label>
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Unidad 1</option>
+																		<option value="e2">Unidad 2</option>
+																	</select>
+																</div>
+																<div class="col-lg-3">
+																	<label>Producto:</label>
+																	<select class="form-control m-select2" id="kt_select2_4" name="param">
+																		<option value="e1">Producto 1</option>
+																		<option value="e2">Producto 2</option>
+																	</select>
+																</div>	
+															</div>
+															
+															<div class="row" style="margin-top: 30px; border-top: 1px solid #ebedf2; padding-top: 10px;">
+																<h5 style="margin-bottom: 15px;">Comentarios</h5>
+																<textarea id="textareaaprobadores" class="form-control" cols="5"></textarea> 
+															</div>
+														</div>
+
+
+														<div class="tab-pane" id="workflow-tab" role="tabpanel">
+															<table class="kt-datatable" id="tabla4" width="100%" style="min-height:50px!Important;">
+																	<thead>
+																		<tr>
+																			<th title="idarticulo">Nivel</th>
+																			<th title="descarticulo">Aprobador</th>
+																			<th title="um">Puesto</th>
+																			<th title="Field #4">Fecha Envío</th>
+																			<th title="Field #5">Estatus</th>
+																			<th title="Field #6">Fecha de aprobación</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td><p>1</p></td>
+																			<td><p>Sandra Duran Linares</p></td>
+																			<td><p>Jefe de compras corp</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Aprobado</p></td>
+																			<td><p>04/04/2019</p></td>
+																		</tr>
+																		<tr>
+																			<td><p>1</p></td>
+																			<td><p>José Gonzalez Hernandez</p></td>
+																			<td><p>Jefe de compras corp</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Rechazado</p></td>
+																			<td><p>04/04/2019</p></td>
+																		</tr>
+																		<tr>
+																			<td><p>3</p></td>
+																			<td><p>Yair Hernandez</p></td>
+																			<td><p>Director de Compras</p></td>
+																			<td><p></p></td>
+																			<td><p>No enviado</p></td>
+																			<td><p></p></td>
+																		</tr>
+																		<tr>
+																			<td><p>2</p></td>
+																			<td><p>Almicar Hernandez</p></td>
+																			<td><p>Gerente General</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Pendiente</p></td>
+																			<td><p></p></td>
+																		</tr>
+																		<tr>
+																			<td><p>2</p></td>
+																			<td><p>Monica Campos de Lira</p></td>
+																			<td><p>Gerente General</p></td>
+																			<td><p>04/04/2019</p></td>
+																			<td><p>Devuelto</p></td>
+																			<td><p></p></td>
+																		</tr>
+																		
+																	</tbody>
+																</table>
+														</div>
+														<div class="tab-pane" id="doctos-tab" role="tabpanel">
+															<div class="row">
+																<h5 style="margin-bottom: 15px;">Recepción</h5>	
+															</div>
+															<div class="row">
+																<div class="col-lg-12"><h6>ID Recepción:</h6></div>
+																<div class="col-lg-12"><h6>Fecha Recepción:</h6></div>
+																<div class="col-lg-12"><h6>Estado Recepción:</h6></div>
+															</div>
+
+															<div class="row" style="margin-top: 20px;">
+																<h5 style="margin-bottom: 15px;">Comprobante</h5>	
+															</div>
+															<div class="row">
+																<div class="col-lg-12"><h6>ID Comprobante:</h6></div>
+																<div class="col-lg-12"><h6>Factura:</h6></div>
+																<div class="col-lg-12"><h6>Estado de comprobante:</h6></div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</form>
+											
+										</div>
+
+										<!--footer-->
+										<div class="kt-portlet__foot">
+											<div class="row align-items-center">
+												<div class="col-lg-12 kt-align-left">
+													<button type="submit" id="createOrderButton"
+													class="btn btn-success">Guardar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								
+							</div>
+
+							<!--End::Section-->
+
 						</div>
 
+						<!-- end:: Content -->
+
+						<!-- end:: Content -->
 					</div>
 
 					<!-- begin:: Footer -->
@@ -1784,13 +2573,46 @@
 
 		<!--begin::Page Scripts(used by this page) -->
 		<script src="assets/app/custom/general/dashboard.js" type="text/javascript"></script>
-
+		<script src="assets/app/custom/general/crud/forms/widgets/bootstrap-datepicker.js" type="text/javascript"></script>
+		<script src="assets/app/custom/general/crud/metronic-datatable/base/html-table.js" type="text/javascript"></script>
 		<!--end::Page Scripts -->
 
 		<!--begin::Global App Bundle(used by all pages) -->
 		<script src="assets/app/bundle/app.bundle.js" type="text/javascript"></script>
 
 		<!--end::Global App Bundle -->
+
+		<script type="text/javascript">
+
+			function getParameterByName( name ) //courtesy Artem
+			{
+			  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+			  var regexS = "[\\?&]"+name+"=([^&#]*)";
+			  var regex = new RegExp( regexS );
+			  var results = regex.exec( window.location.href );
+			  if( results == null )
+			    return "";
+			  else
+			  {
+			    if ((results[1].indexOf('?'))>0)
+			        return decodeURIComponent(results[1].substring(0,results[1].indexOf('?')).replace(/\+/g, " "));
+			    else
+			        return decodeURIComponent(results[1].replace(/\+/g, " "));
+			  }
+			}
+
+			$(document).ready(function(){
+
+				var unneg = getParameterByName("unneg");
+				$("#empresa").val(unneg);
+				var desc = getParameterByName("desc");
+				$("#desc").val(desc);
+
+				$("#createOrderButton").click(function(e){
+					alert("click al boton");
+				});
+			});
+		</script>
 	</body>
 
 	<!-- end::Body -->
